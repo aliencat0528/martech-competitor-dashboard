@@ -1,0 +1,128 @@
+{
+  "schema_version": "0.1.0",
+  "captured_at": "2026-08-07",
+  "vendors": [
+    {
+      "id": "appier",
+      "name": "Appier",
+      "name_zh": "沛星互動科技",
+      "ticker": "4180.T",
+      "hq": "Taiwan",
+      "founded": 2012,
+      "positioning": "AI-native MarTech，橫跨廣告投放、自有渠道互動、第一方資料三個市場",
+      "vision_statement": {
+        "text": "One Data. One Experience. One Agentic World.",
+        "source_url": "https://www.prnewswire.com/news-releases/appier-announces-full-product-line-infused-with-agentic-ai-ushering-in-a-new-era-of-roi-driven-marketing-solutions-302563962.html",
+        "confidence": "claimed",
+        "captured_at": "2026-08-07"
+      },
+      "product_lines": [
+        { "id": "advertising_cloud", "label": "Advertising Cloud", "label_zh": "廣告雲" },
+        { "id": "personalization_cloud", "label": "Personalization Cloud", "label_zh": "個人化雲" },
+        { "id": "data_cloud", "label": "Data Cloud", "label_zh": "資料雲" }
+      ],
+      "metrics": {
+        "revenue": {
+          "value": 12100000000,
+          "currency": "JPY",
+          "period": "FY2026 Q1",
+          "yoy": 0.294,
+          "source_url": "https://www.inside.com.tw/article/41288-appier-q1-2026-revenue-record-agentic-ai-margin-expansion",
+          "confidence": "verified",
+          "captured_at": "2026-08-07"
+        },
+        "gross_profit": {
+          "value": 6500000000,
+          "currency": "JPY",
+          "period": "FY2026 Q1",
+          "yoy": 0.359,
+          "source_url": "https://www.appier.com/en/press-media/fy26q1earnings",
+          "confidence": "verified",
+          "captured_at": "2026-08-07"
+        },
+        "gross_margin": {
+          "value": 0.539,
+          "prior_value": 0.514,
+          "period": "FY2026 Q1",
+          "source_url": "https://www.appier.com/en/press-media/fy26q1earnings",
+          "confidence": "verified",
+          "captured_at": "2026-08-07"
+        },
+        "operating_profit": {
+          "value": 185000000,
+          "currency": "JPY",
+          "period": "FY2026 Q1",
+          "margin": 0.015,
+          "yoy": 1.53,
+          "source_url": "https://www.appier.com/en/press-media/fy26q1earnings",
+          "confidence": "verified",
+          "captured_at": "2026-08-07"
+        },
+        "customers": {
+          "value": 1800,
+          "qualifier": "1,800+ 全球客戶",
+          "yoy_growth": 0.13,
+          "source_url": "https://www.appier.com/en/about",
+          "confidence": "claimed",
+          "captured_at": "2026-08-07"
+        },
+        "offices": {
+          "value": 17,
+          "source_url": "https://www.appier.com/en/about",
+          "confidence": "claimed",
+          "captured_at": "2026-08-07"
+        },
+        "g2_rating": {
+          "value": 4.5,
+          "reviews_count": 241,
+          "scope": "全產品加總，Appier 未分產品揭露",
+          "source_url": "https://www.g2.com/sellers/appier",
+          "confidence": "verified",
+          "captured_at": "2026-08-07"
+        },
+        "employees": {
+          "value": null,
+          "source_url": null,
+          "confidence": "none",
+          "captured_at": "2026-08-07"
+        }
+      },
+      "growth_drivers": [
+        {
+          "text": "電商垂直年增逾 35%",
+          "source_url": "https://www.inside.com.tw/article/41288-appier-q1-2026-revenue-record-agentic-ai-margin-expansion",
+          "confidence": "verified",
+          "captured_at": "2026-08-07"
+        },
+        {
+          "text": "其他網路服務（線上旅遊帶動）年增逾 40%",
+          "source_url": "https://finance.technews.tw/2026/02/13/appier-q4-2025-earnings",
+          "confidence": "verified",
+          "captured_at": "2026-08-07"
+        }
+      ],
+      "acquisitions": [
+        {
+          "target": "BotBonnie",
+          "year": 2021,
+          "amount": null,
+          "rationale": "補齊全渠道對話式行銷",
+          "source_url": "https://www.appier.com/en/press-media/appier-adds-omnichannel-chatbot-platform-botbonnie-to-its-ai-powered-solutions-to-boost-conversational-marketing",
+          "confidence": "verified",
+          "captured_at": "2026-08-07"
+        },
+        {
+          "target": "AdCreative.ai",
+          "year": 2025,
+          "amount": 38700000,
+          "currency": "USD",
+          "closed_at": "2025-03-19",
+          "rationale": "生成式 AI 廣告素材，並拓展歐洲市場；為 Appier IPO 後最大一筆併購",
+          "source_url": "https://www.prnewswire.com/news-releases/appier-acquires-adcreativeai-in-strategic-move-to-lead-generative-ai-powered-advertising-and-marketing-innovation-302374630.html",
+          "confidence": "verified",
+          "captured_at": "2026-08-07"
+        }
+      ]
+    }
+  ]
+}
