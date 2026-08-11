@@ -9,6 +9,10 @@
 - （M1）Zone A 報告區與 PDF／CSV／Markdown 匯出
 - （M1）`scripts/validate.js` 資料契約檢查
 
+### Changed
+- `docs/FEATURES.md` — Zone A「本期變化」由 M1 改列 M3：M1 只有一份快照，無前版可比。
+  Zone A 元件表補上里程碑欄，M1／M3 交付說明同步對齊
+
 ## [0.1.0] - 2026-08-07
 
 ### Added
