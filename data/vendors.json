@@ -1,6 +1,7 @@
 {
   "schema_version": "0.1.0",
-  "captured_at": "2026-08-07",
+  "captured_at": "2026-08-14",
+  "note": "91APP 依 A 案僅收廠商層，產品未進 products.json、能力未進 capabilities 矩陣——其核心能力（開店、金流、物流、庫存、POS）不在現有 22 項能力字典內，強行入矩陣會兩邊各空一半（← prepare.md MC-005 棄選）。",
   "vendors": [
     {
       "id": "appier",
@@ -123,6 +124,175 @@
           "captured_at": "2026-08-07"
         }
       ]
+    },
+    {
+      "id": "91app",
+      "name": "91APP",
+      "name_zh": "九易宇軒",
+      "ticker": "6741.TWO",
+      "hq": "Taiwan",
+      "founded": 2013,
+      "positioning": "OMO 新零售 SaaS，開店平台起家，向會員經營、零售媒體與 AI Agent 延伸",
+      "record_scope": {
+        "level": "vendor_only",
+        "reason": "← prepare.md MC-001（M1 單廠商做深）與 MC-005（四群未涵蓋零售電商平台側）尚未鬆綁，故只收廠商層",
+        "captured_at": "2026-08-14"
+      },
+      "vision_statement": {
+        "text": null,
+        "source_url": null,
+        "confidence": "none",
+        "captured_at": "2026-08-14"
+      },
+      "product_lines": [
+        {
+          "id": "agent_one",
+          "label": "AgentOne",
+          "label_zh": "企業級 AI Agent 平台",
+          "launched_at": "2026-07-29",
+          "quantified_results_disclosed": false,
+          "note": "官方發表稿未揭露任何量化成效，僅引用 McKinsey 市場數據佐證——與 agents.json 記錄的 Appier 八 Agent 情況相同",
+          "source_url": "https://91app.com/blog/91app-202607-agentone/",
+          "confidence": "claimed",
+          "captured_at": "2026-08-14"
+        },
+        {
+          "id": "commerce_cloud",
+          "label": "Commerce Cloud",
+          "label_zh": "電商／開店平台",
+          "source_url": "https://91app.com/solutions/",
+          "confidence": "claimed",
+          "captured_at": "2026-08-14"
+        },
+        {
+          "id": "marketing_cloud",
+          "label": "Marketing Cloud",
+          "label_zh": "會員 CRM 與行銷自動化",
+          "note": "官網宣稱含 AI 智能分群模型（NAPL／DCIU）與 APP Push／eDM／SMS 溝通渠道",
+          "source_url": "https://marketing.91app.com/",
+          "confidence": "claimed",
+          "captured_at": "2026-08-14"
+        },
+        {
+          "id": "ims",
+          "label": "IMS 多通路管理",
+          "label_zh": "庫存與多通路訂單管理",
+          "source_url": "https://91app.com/solutions/",
+          "confidence": "claimed",
+          "captured_at": "2026-08-14"
+        },
+        {
+          "id": "touch_solution",
+          "label": "91APP Touch Solution",
+          "label_zh": "門市 POS／零售終端",
+          "source_url": "https://91app.com/solutions/",
+          "confidence": "claimed",
+          "captured_at": "2026-08-14"
+        },
+        {
+          "id": "payments",
+          "label": "91APP Payments",
+          "label_zh": "金流",
+          "source_url": "https://91app.com/solutions/",
+          "confidence": "claimed",
+          "captured_at": "2026-08-14"
+        },
+        {
+          "id": "staff_board",
+          "label": "STAFF BOARD",
+          "label_zh": "門市人員管理",
+          "source_url": "https://91app.com/solutions/",
+          "confidence": "claimed",
+          "captured_at": "2026-08-14"
+        }
+      ],
+      "metrics": {
+        "revenue": {
+          "value": 541135000,
+          "currency": "TWD",
+          "period": "FY2026 Q1",
+          "yoy": null,
+          "source_url": "https://statementdog.com/analysis/6741/income-statement",
+          "confidence": "verified",
+          "captured_at": "2026-08-14"
+        },
+        "revenue_fy2025": {
+          "value": 1807000000,
+          "currency": "TWD",
+          "period": "FY2025",
+          "source_url": "https://statementdog.com/analysis/6741/monthly-revenue",
+          "confidence": "verified",
+          "captured_at": "2026-08-14"
+        },
+        "revenue_1h2026": {
+          "value": 1099000000,
+          "currency": "TWD",
+          "period": "2026 H1 累計",
+          "yoy": 0.3173,
+          "source_url": "https://statementdog.com/analysis/6741/monthly-revenue",
+          "confidence": "verified",
+          "captured_at": "2026-08-14"
+        },
+        "net_income": {
+          "value": 133766000,
+          "currency": "TWD",
+          "period": "FY2026 Q1",
+          "eps": 1.15,
+          "source_url": "https://statementdog.com/analysis/6741/income-statement",
+          "confidence": "verified",
+          "captured_at": "2026-08-14"
+        },
+        "gross_margin": {
+          "value": null,
+          "source_url": null,
+          "confidence": "none",
+          "note": "未在已查證來源中取得，不以營收淨利反推",
+          "captured_at": "2026-08-14"
+        },
+        "customers": {
+          "value": 10000,
+          "qualifier": "服務超過一萬家品牌商",
+          "source_url": "https://www.91app.com.hk/about",
+          "confidence": "claimed",
+          "captured_at": "2026-08-14"
+        },
+        "offices": {
+          "value": null,
+          "source_url": null,
+          "confidence": "none",
+          "captured_at": "2026-08-14"
+        },
+        "g2_rating": {
+          "value": null,
+          "reviews_count": null,
+          "source_url": null,
+          "confidence": "none",
+          "note": "台灣本土市場為主，G2／Capterra 無足量評論樣本——G2 Grid 式市場影響力軸在此廠商只能靠財報側支撐",
+          "captured_at": "2026-08-14"
+        },
+        "employees": {
+          "value": null,
+          "source_url": null,
+          "confidence": "none",
+          "note": "公開資料互相衝突（逾 600 人與逾 550 人並存），依資料層硬規則 3 留 null 不取中間值",
+          "captured_at": "2026-08-14"
+        }
+      },
+      "growth_drivers": [
+        {
+          "text": "2026 年 6 月單月營收 2.01 億元，年增 32.45%",
+          "source_url": "https://statementdog.com/analysis/6741/monthly-revenue",
+          "confidence": "verified",
+          "captured_at": "2026-08-14"
+        },
+        {
+          "text": "2026 上半年累計營收年增 31.73%",
+          "source_url": "https://statementdog.com/analysis/6741/monthly-revenue",
+          "confidence": "verified",
+          "captured_at": "2026-08-14"
+        }
+      ],
+      "acquisitions": []
     }
   ]
 }

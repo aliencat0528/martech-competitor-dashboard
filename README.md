@@ -10,7 +10,8 @@
 - **報告在最上方** — 開頁先看執行摘要、關鍵發現、與上一版的 diff，資料在底下供追問
 - **每筆欄位都帶來源** — `source_url` / `confidence` / `captured_at` 三個中繼欄位為必填，沒有來源的資料進不了表
 - **四態信度標記** — 已查證／官方宣稱／推測／無公開，查不到的欄位留空，不編數字填滿
-- **宣稱 vs. 證據落差分** — 本專案的差異化指標：把廠商說的與第三方驗得到的並列成兩欄，落差本身就是發現
+- **客觀可查的比較指標** — 能力覆蓋率、產品線重疊率、渠道與垂直產業覆蓋、計價透明度、財報規模，
+  全部由公開資料算出，不做主觀評分；定位圖的合成權重公開且可由讀者自行調整
 - **每張圖都有圖說** — 圖下方固定兩塊：「怎麼讀」與「這張圖現在說什麼」。後者由分析層算出來，
   資料一改描述跟著改，不會有數字變了說明沒變的情況
 - **三種匯出** — PDF（`@media print`）、CSV（資料表）、Markdown（報告全文）
@@ -35,13 +36,14 @@ M1 開工後的本地開發流程屆時補 `docs/DEPLOYMENT.md`，此處連結�
 - 想知道怎麼蓋 → `docs/ARCHITECTURE.md`（四層架構、資料模型、資料流）
 - 想知道為什麼這樣決定 → `prepare.md`（MC-000 起）
 - 想看已收集的 Appier 情報 → `data/products.json`、`data/agents.json`
+- 想看廠商層資料（含 91APP）→ `data/vendors.json`
 
 ## 專案結構
 
 ```
 martech-competitor-dashboard/
 ├── data/                    # 資料層：手動維護的結構化 JSON，唯一事實來源
-│   ├── vendors.json         # 廠商主檔（v0.1.0 只有 Appier）
+│   ├── vendors.json         # 廠商主檔（Appier 完整、91APP 僅廠商層）
 │   ├── products.json        # 產品明細，九個 Appier 產品
 │   ├── agents.json          # Agent 能力層，八個 Appier AI Agent
 │   └── capabilities.json    # 能力字典，能力矩陣的欄位定義
@@ -67,7 +69,7 @@ for f in data/*.json; do python3 -m json.tool "$f" > /dev/null && echo "OK $f"; 
 
 | 階段 | 範圍 | 出口條件 |
 |------|------|---------|
-| **M1** | 單一廠商做深（Appier），資料層 schema 定案、報告區可讀、PDF＋CSV＋Markdown 匯出可用 | 不看原始碼的人能在 3 分鐘內講出 Appier 的三個弱點 |
+| **M1** | 單一廠商做深（Appier）＋91APP 廠商層，資料層 schema 定案、報告區可讀、產品層級比較圖、PDF＋CSV＋Markdown 匯出可用 | 不看原始碼的人能在 3 分鐘內講出 Appier 的三個弱點 |
 | **M2** | 加入四組對照廠商、能力矩陣上線 | 矩陣能撐起一句「Appier 唯一贏／唯一輸」的具體結論 |
 | **M3** | 定位圖、方法論頁、與上一版 diff | 任一分數都能回答「這 0.5 分是怎麼來的」 |
 
