@@ -75,7 +75,7 @@ flowchart TB
 
 | 層 | 模組 | 職責 | 明確不做 |
 |---|------|------|---------|
-| L1 | `data/*.json` | 唯一事實來源。每筆事實欄位帶三個中繼欄位 | 不做任何計算、不存衍生值 |
+| L1 | `data/<YYYY-MM-DD>/*.json` | 唯一事實來源，每個日期目錄是一份完整快照。每筆事實欄位帶三個中繼欄位 | 不做任何計算、不存衍生值、**不改動歷史快照** |
 | L2 | `src/analysis/*.ts` | 純函式：吃 JSON 吐分數**與圖說 `summary`**（句型模板＋數字填空），無副作用、無 I/O | 不讀檔、不碰 DOM、不呼叫 API、**不呼叫 LLM 生成描述** |
 | L3 | `src/zones/*.tsx` | 版面與互動 | 不算分數（算了就會與匯出對不上）、**不自己寫圖說描述** |
 | L4 | `src/export/*.ts` | 三種格式的序列化，**PDF／Markdown 帶上圖說** | 不重新查資料、不重算 |
@@ -158,7 +158,7 @@ flowchart TB
 
 ```mermaid
 sequenceDiagram
-  participant D as data/*.json
+  participant D as data/&lt;date&gt;/*.json
   participant A as analysis/
   participant R as Zone A 報告區
   participant E as Zone E/F 證據區
@@ -202,6 +202,8 @@ sequenceDiagram
 ```
 martech-competitor-dashboard/
 ├── data/                  # L1
+│   ├── manifest.json      # 快照索引：latest / previous / 各快照的觸發原因
+│   └── <YYYY-MM-DD>/      # 一個日期＝一份完整快照，歷史快照不可變（← MC-012）
 ├── src/
 │   ├── analysis/          # L2 純函式，逐一對應一個指標；含圖說 summary 的句型模板
 │   ├── charts/            # 圖說「怎麼讀」的靜態文字（人寫，隨圖不隨資料）＋ SVG 圖元件
@@ -218,8 +220,7 @@ martech-competitor-dashboard/
 
 以下各項在 `prepare.md`「待討論事項」有正本，此處只列它們對架構的影響：
 
-1. **版本 diff 的基準（每月快照 vs 事件驅動）** → 決定要不要在 `data/` 下多一層日期目錄。
-   **這兩件事可分開決定**：目錄結構現在就得定，頻率可延後
+1. **快照頻率（每月 vs 事件驅動）** → **不影響架構**，目錄結構已由 MC-012 定案
 2. **台灣在地那群資料不足時的處理** → 可能需要分群專屬的 `capabilities` 子集
 3. **對照組納入門檻** → 不影響架構，但方法論頁（Zone F）要寫得出來
 4. **能力字典是否擴充零售側欄位** → 決定 `capabilities.json` 是走大字典還是分群子集，
