@@ -1,0 +1,337 @@
+{
+  "schema_version": "0.1.0",
+  "captured_at": "2026-08-07",
+  "note": "所有事實欄位帶 source_url / confidence / captured_at。confidence 四態封閉：verified / claimed / inferred / none。查不到的值為 null。",
+  "products": [
+    {
+      "id": "aibid",
+      "vendor_id": "appier",
+      "name": "AIBID",
+      "line": "advertising_cloud",
+      "category": "bid_optimization",
+      "buyer_role": "UA 經理",
+      "verticals": ["gaming", "app", "ecommerce"],
+      "source_url": "https://www.appier.com/en/products/aibid",
+      "features": [
+        { "text": "深度學習預測高價值用戶，跨版位即時動態調價", "confidence": "claimed" },
+        { "text": "逐時出價調整、情境式鎖定、行為模式分析", "confidence": "claimed" },
+        { "text": "GenAI 動態素材個人化", "confidence": "claimed" },
+        { "text": "100% 預算配置透明", "confidence": "claimed" }
+      ],
+      "claimed_strengths": [
+        { "text": "能在開跑第一天就帶來優質安裝——用早期正向訊號加速模型收斂", "confidence": "claimed" }
+      ],
+      "evidence_reviews": [
+        { "text": "Singular 評為 Top ROI-Driving Ad Partner", "confidence": "claimed", "note": "獎項為第三方頒發，但目前僅見於 Appier 自述頁，未直接查到 Singular 原始榜單" },
+        { "text": "App Growth Awards 2024「最佳 App 行銷平台」", "confidence": "claimed" },
+        { "text": "客戶回饋集中在「留存率優異」，無公開量化 benchmark", "confidence": "claimed" }
+      ],
+      "pricing": { "model": "enterprise_quote", "public": false, "value": null, "note": "廣告類多為 media spend 抽成或 CPI/CPA 綁定", "confidence": "inferred", "source_url": null },
+      "adoption": { "customers": null, "reviews_count": null, "rating": null, "confidence": "none", "note": "Appier 未分產品揭露" },
+      "pain_points": [
+        { "text": "黑箱感——廣告主看得到結果、看不到出價邏輯", "type": "transparency", "confidence": "inferred" },
+        { "text": "跨渠道歸因與 MMM 仍由 ROI Agent 補位，本體不含增量測試", "type": "capability_gap", "confidence": "inferred" }
+      ],
+      "competitors": ["moloco", "liftoff", "applovin_axon", "smadex"],
+      "first_party_data_dependency": 2,
+      "acquisition_difficulty": "low"
+    },
+    {
+      "id": "aixpert",
+      "vendor_id": "appier",
+      "name": "AIXPERT",
+      "line": "advertising_cloud",
+      "category": "campaign_automation",
+      "buyer_role": "廣告操盤手",
+      "verticals": ["app", "gaming", "ecommerce"],
+      "source_url": "https://www.appier.com/en/products/aixpert",
+      "features": [
+        { "text": "24/7 自動操盤：預算配置與出價策略優化", "confidence": "claimed" },
+        { "text": "Apple Search Ads 關鍵字自動生成", "confidence": "claimed" },
+        { "text": "神經網路模型發掘受眾分群", "confidence": "claimed" },
+        { "text": "跨平台管理：Apple Search Ads、TikTok、Facebook、Google、X", "confidence": "claimed" },
+        { "text": "即時素材優化與關鍵字／素材成效分析", "confidence": "claimed" }
+      ],
+      "claimed_strengths": [
+        { "text": "單一介面把洞察與執行接在同一層，可跨平台同步下動作", "confidence": "claimed" },
+        { "text": "Autopilot 讓行銷人專注優先事項、其餘交給 AI", "confidence": "claimed" }
+      ],
+      "evidence_reviews": [
+        { "text": "Perfect Corp. 變現團隊：AI 自動化預算配置與出價調整協助其在 ASA 上有效獲客", "confidence": "claimed", "note": "客戶語錄，無量化數據" }
+      ],
+      "pricing": { "model": "enterprise_quote", "public": false, "value": null, "confidence": "none", "source_url": null },
+      "adoption": { "customers": null, "reviews_count": null, "rating": null, "confidence": "none" },
+      "pain_points": [
+        { "text": "Autopilot 與人工操盤的控制權界線模糊，操盤手要「相信 AI」的心理門檻高", "type": "trust", "confidence": "inferred" },
+        { "text": "ASA 之外的平台整合深度不一，官網僅 ASA 有具體功能描述", "type": "capability_gap", "confidence": "inferred" }
+      ],
+      "competitors": ["skai", "smartly_io", "mobileaction", "splitmetrics"],
+      "first_party_data_dependency": 2,
+      "acquisition_difficulty": "low"
+    },
+    {
+      "id": "retargeting",
+      "vendor_id": "appier",
+      "name": "Retargeting",
+      "aka": ["CrossX"],
+      "line": "advertising_cloud",
+      "category": "retargeting",
+      "buyer_role": "成長／電商負責人",
+      "verticals": ["ecommerce", "retail", "gaming", "finance", "insurance", "automobile"],
+      "source_url": "https://www.appier.com/en/products/retargeting",
+      "features": [
+        { "text": "以 ROAS 為軸切分高價值與流失風險受眾", "confidence": "claimed" },
+        { "text": "LLM 驅動的商品推薦引擎", "confidence": "claimed" },
+        { "text": "跨優質版位動態預算配置與即時優化", "confidence": "claimed" },
+        { "text": "GenAI 動態素材生成（整合 AdCreative.ai）", "confidence": "claimed" },
+        { "text": "即時行為分析驅動出價調整與留存策略", "confidence": "claimed" }
+      ],
+      "claimed_strengths": [
+        { "text": "把受眾切分與素材生成接成一條龍，提升回購頻次、留存與 LTV", "confidence": "claimed" }
+      ],
+      "evidence_reviews": [
+        { "text": "Appier 以 CrossX 起家，為最成熟的產品線", "confidence": "verified" }
+      ],
+      "pricing": { "model": "media_spend_share", "public": false, "value": null, "confidence": "inferred", "source_url": null },
+      "adoption": { "customers": null, "reviews_count": null, "rating": null, "confidence": "none" },
+      "pain_points": [
+        { "text": "Cookie 退場與 ATT 之後第三方訊號變薄，效果高度依賴品牌自有數據能否餵進來", "type": "structural", "confidence": "inferred", "note": "這正是 AIRIS 的存在理由" }
+      ],
+      "competitors": ["criteo", "rtb_house", "remerge", "applovin"],
+      "first_party_data_dependency": 3,
+      "acquisition_difficulty": "low"
+    },
+    {
+      "id": "adcreative_ai",
+      "vendor_id": "appier",
+      "name": "AdCreative.ai",
+      "line": "advertising_cloud",
+      "category": "creative_generation",
+      "buyer_role": "設計／中小企業主",
+      "verticals": ["smb", "agency", "ecommerce"],
+      "source_url": "https://www.prnewswire.com/news-releases/appier-acquires-adcreativeai-in-strategic-move-to-lead-generative-ai-powered-advertising-and-marketing-innovation-302374630.html",
+      "features": [
+        { "text": "生成式廣告素材：動態背景、互動式行銷內容", "confidence": "verified" },
+        { "text": "影像與影片素材批次產出", "confidence": "verified" }
+      ],
+      "claimed_strengths": [
+        { "text": "Appier 產品線中唯一有公開自助訂閱的產品，是進入 PLG 與歐洲市場的入口", "confidence": "verified" }
+      ],
+      "evidence_reviews": [
+        { "text": "成立 18 個月達 ARR 1,590 萬美元", "confidence": "verified" },
+        { "text": "客戶含 Snapchat、Pernod Ricard、Reckitt、BNP Paribas、Chopard", "confidence": "verified" },
+        { "text": "獨立品牌時期評價兩極：產出速度受肯定、素材同質化被詬病", "confidence": "inferred", "note": "尚未取得可引用的評論站樣本，待補" }
+      ],
+      "pricing": { "model": "public_self_serve_tiers", "public": true, "value": null, "confidence": "verified", "note": "分級訂閱制，實際級距與金額待補", "source_url": null },
+      "adoption": { "customers": null, "reviews_count": null, "rating": null, "arr_usd": 15900000, "confidence": "verified" },
+      "pain_points": [
+        { "text": "SMB 自助產品與企業銷售模式並存，客群、計價、服務層級都要分岔——整併難度高於技術整合", "type": "gtm", "confidence": "inferred" }
+      ],
+      "competitors": ["canva", "creatopy", "pencil", "meta_advantage_plus"],
+      "first_party_data_dependency": 1,
+      "acquisition_difficulty": "low"
+    },
+    {
+      "id": "aiqua",
+      "vendor_id": "appier",
+      "name": "AIQUA",
+      "line": "personalization_cloud",
+      "category": "marketing_automation",
+      "buyer_role": "CRM／會員行銷",
+      "verticals": ["ecommerce", "retail", "finance", "insurance", "gaming", "automobile"],
+      "source_url": "https://www.appier.com/en/products/aiqua",
+      "channels": ["web", "app", "push", "email", "sms", "social_messaging"],
+      "features": [
+        { "text": "AI 推薦：NLP、深度影像學習、用戶親和度演算法", "confidence": "claimed" },
+        { "text": "行為觸發自動化（購物車提醒、收藏提醒）", "confidence": "claimed" },
+        { "text": "動態素材依用戶輪廓與行為調整內容", "confidence": "claimed" },
+        { "text": "Creative Studio 無碼拖拉編輯器", "confidence": "claimed" },
+        { "text": "全渠道旅程編排（Omnichannel Journey Builder）", "confidence": "claimed" },
+        { "text": "即時分眾與預測性受眾", "confidence": "claimed" },
+        { "text": "A/B 與多變量測試", "confidence": "claimed" }
+      ],
+      "claimed_strengths": [
+        { "text": "24 套自適應演算法驅動推薦", "confidence": "claimed" },
+        { "text": "Autopilot 模式持續優化、免人工介入", "confidence": "claimed" },
+        { "text": "AI Copilot 生成 A/B 測試文案變體", "confidence": "claimed" },
+        { "text": "與 AIRIS 整合取得完整客戶洞察", "confidence": "claimed" }
+      ],
+      "evidence_reviews": [
+        { "text": "正面：使用近一年後對成效印象良好；跨渠道 campaign 設定與 AI 個人化模型有感", "confidence": "verified", "source_url": "https://www.g2.com/products/appier-aiqua/reviews?qs=pros-and-cons" },
+        { "text": "負面：AIQUA 與 AIRIS／BotBonnie 的整合與綜效有改進空間，資料交換不如預期流暢直覺", "confidence": "verified", "source_url": "https://www.g2.com/products/appier-aiqua/reviews?qs=pros-and-cons" },
+        { "text": "負面：部分進階／beta 功能複雜到令人不知所措，需要客服團隊指導", "confidence": "verified", "source_url": "https://www.g2.com/products/appier-aiqua/reviews?qs=pros-and-cons" }
+      ],
+      "pricing": { "model": "enterprise_quote", "public": false, "value": null, "confidence": "none", "source_url": null },
+      "adoption": { "customers": null, "reviews_count": null, "rating": null, "confidence": "none", "note": "為 Appier 評論數最多的產品，但 G2 僅公開全產品加總" },
+      "pain_points": [
+        { "text": "自家產品之間的資料互通性是評論中最一致的抱怨——多產品購買後反而出現內部孤島", "type": "integration", "confidence": "verified" },
+        { "text": "進階功能的採用深度不足，需靠客服帶", "type": "onboarding", "confidence": "verified" }
+      ],
+      "competitors": ["braze", "insider", "moengage", "clevertap", "bloomreach", "iterable"],
+      "first_party_data_dependency": 4,
+      "acquisition_difficulty": "medium"
+    },
+    {
+      "id": "aideal",
+      "vendor_id": "appier",
+      "name": "AiDeal",
+      "line": "personalization_cloud",
+      "category": "conversion_optimization",
+      "buyer_role": "電商轉換負責人",
+      "verticals": ["ecommerce", "retail", "finance", "insurance", "education", "automobile"],
+      "source_url": "https://www.appier.com/en/products/aideal",
+      "features": [
+        { "text": "分析 400+ 資料屬性（瀏覽時序、商品瀏覽、滑鼠軌跡）預測猶豫型買家", "confidence": "claimed" },
+        { "text": "個人化發券時機", "confidence": "claimed" },
+        { "text": "A/B 測試驗證對猶豫用戶的成效", "confidence": "claimed" },
+        { "text": "跨渠道投放：聊天、簡訊、Email", "confidence": "claimed" },
+        { "text": "猶豫程度與活動 ROI 儀表板", "confidence": "claimed" }
+      ],
+      "claimed_strengths": [
+        { "text": "只鎖定猶豫者，不對「本來就會買」與「本來就不會買」的人發券", "confidence": "claimed" },
+        { "text": "不需規則設定，全靠機器學習", "confidence": "claimed" },
+        { "text": "GTM 埋碼，約一週上線", "confidence": "claimed" }
+      ],
+      "evidence_reviews": [
+        { "text": "資生堂：促使猶豫買家更快下單並改善購物體驗", "confidence": "claimed", "note": "客戶語錄，無量化數據" },
+        { "text": "家樂福：解決零售商營運痛點、避免無差別發券", "confidence": "claimed" }
+      ],
+      "pricing": { "model": "performance_based", "public": true, "value": null, "note": "按實際轉換計費，不需預付承諾——全產品線中最特殊的計價模式", "confidence": "verified", "source_url": "https://www.appier.com/en/products/aideal" },
+      "adoption": { "customers": null, "reviews_count": null, "rating": null, "confidence": "none" },
+      "pain_points": [
+        { "text": "場景窄（主要是發券），天花板明確", "type": "scope", "confidence": "inferred" },
+        { "text": "成效計價對 Appier 自身毛利率是雙面刃", "type": "business_model", "confidence": "inferred" }
+      ],
+      "competitors": ["dynamic_yield", "optimizely", "vwo", "namogoo"],
+      "first_party_data_dependency": 2,
+      "acquisition_difficulty": "low"
+    },
+    {
+      "id": "botbonnie",
+      "vendor_id": "appier",
+      "name": "BotBonnie",
+      "line": "personalization_cloud",
+      "category": "conversational_marketing",
+      "buyer_role": "社群／會員經營",
+      "verticals": ["ecommerce", "retail", "gaming", "automobile"],
+      "source_url": "https://www.appier.com/en/products/botbonnie",
+      "channels": ["line", "facebook", "instagram", "whatsapp", "kakaotalk", "web_chat"],
+      "features": [
+        { "text": "無碼拖拉建立對話機器人", "confidence": "claimed" },
+        { "text": "互動行銷模組（抽獎、刮刮卡、MGM），約 10 分鐘部署", "confidence": "claimed" },
+        { "text": "行為觸發的自動化對話流", "confidence": "claimed" },
+        { "text": "依即時聊天互動收集與打標分眾", "confidence": "claimed" },
+        { "text": "LLM 知識庫客服機器人，24/7 服務", "confidence": "claimed" },
+        { "text": "從互動到轉換的活動成效追蹤", "confidence": "claimed" }
+      ],
+      "claimed_strengths": [
+        { "text": "跨訊息、網站、App 的全渠道資料統一，結合 AI 預測模型投放個人化內容", "confidence": "claimed" },
+        { "text": "單一後台管理六個通訊渠道", "confidence": "claimed" }
+      ],
+      "evidence_reviews": [
+        { "text": "正面：對成效與新版聊天、行銷功能滿意；視覺化介面好懂、串接可隨時替換", "confidence": "verified", "source_url": "https://www.g2.com/products/appier-botbonnie/reviews" },
+        { "text": "負面：有許多功能可以被更有效地使用（採用深度不足）", "confidence": "verified", "source_url": "https://www.g2.com/products/appier-botbonnie/reviews" }
+      ],
+      "pricing": { "model": "enterprise_quote", "public": false, "value": null, "note": "併入前為獨立 SaaS 分級訂閱", "confidence": "inferred", "source_url": null },
+      "adoption": { "customers": null, "reviews_count": null, "rating": null, "confidence": "none", "note": "台灣品牌滲透率高，但無公開數字" },
+      "pain_points": [
+        { "text": "「功能買了沒用滿」是典型的 onboarding／客戶成功缺口", "type": "onboarding", "confidence": "verified" },
+        { "text": "與 AIQUA 的資料交換被評論指為不夠流暢", "type": "integration", "confidence": "verified" }
+      ],
+      "competitors": ["crescendo_lab", "super8", "omnichat", "sleekflow"],
+      "moat": { "text": "LINE 生態的在地優勢，台日韓市場國際競品最難複製的一塊", "confidence": "inferred" },
+      "first_party_data_dependency": 3,
+      "acquisition_difficulty": "low"
+    },
+    {
+      "id": "airis",
+      "vendor_id": "appier",
+      "name": "AIRIS",
+      "line": "data_cloud",
+      "category": "cdp",
+      "buyer_role": "數據長／IT＋行銷",
+      "verticals": ["ecommerce", "retail", "finance", "insurance", "gaming", "automobile"],
+      "source_url": "https://www.appier.com/en/products/airis",
+      "features": [
+        { "text": "Data Loader 串接 CRM、資料庫、資料倉儲並建立對應表", "confidence": "claimed" },
+        { "text": "即時身分解析，統一 web／mobile／雲端／第三方來源成 360° 客戶視圖", "confidence": "claimed" },
+        { "text": "自訂屬性建立，宣稱數分鐘完成（傳統需數月）", "confidence": "claimed" },
+        { "text": "AutoML 預測：轉換分數與價格敏感度分數", "confidence": "claimed" },
+        { "text": "Analytics Copilot", "confidence": "claimed" },
+        { "text": "彈性報表模板與全渠道旅程追蹤", "confidence": "claimed" },
+        { "text": "原生串接 AIQUA 與 BotBonnie", "confidence": "claimed" }
+      ],
+      "claimed_strengths": [
+        { "text": "強調速度（data-to-insight／data-to-prediction）與行銷人自主權，不需排 IT 隊列", "confidence": "claimed" }
+      ],
+      "evidence_reviews": [
+        { "text": "新產品，公開評論樣本少；既有 AIQUA 評論指出與 AIRIS 的互通仍待打磨", "confidence": "verified", "source_url": "https://www.g2.com/products/appier-aiqua/reviews?qs=pros-and-cons" }
+      ],
+      "pricing": { "model": "enterprise_quote", "public": false, "value": null, "note": "CDP 市場通常按 profile 數或事件量計價", "confidence": "inferred", "source_url": null },
+      "adoption": { "customers": null, "reviews_count": null, "rating": null, "confidence": "none" },
+      "pain_points": [
+        { "text": "與 AIXON 定位重疊（都在做受眾智慧），對外說明成本高", "type": "portfolio_overlap", "confidence": "inferred" },
+        { "text": "CDP 是重導入專案，「幾分鐘建好輪廓」的宣稱與實際 onboarding 落差待驗", "type": "claim_gap", "confidence": "inferred" }
+      ],
+      "competitors": ["segment", "treasure_data", "tealium", "bloomreach", "mparticle", "adobe_rtcdp"],
+      "strategic_weight": { "text": "Agentic 轉型後的資料地基，產品線中戰略權重最高", "confidence": "inferred" },
+      "first_party_data_dependency": 5,
+      "acquisition_difficulty": "high"
+    },
+    {
+      "id": "aixon",
+      "vendor_id": "appier",
+      "name": "AIXON",
+      "line": "data_cloud",
+      "category": "audience_intelligence",
+      "buyer_role": "受眾策略／分析",
+      "verticals": ["ecommerce", "retail", "finance", "insurance", "gaming", "automobile"],
+      "source_url": "https://www.appier.com/en/products/aixon",
+      "features": [
+        { "text": "AI 模型預測用戶親和度與興趣，做數據擴增", "confidence": "claimed" },
+        { "text": "低碼設定，宣稱可組合出數千種分眾", "confidence": "claimed" },
+        { "text": "語言模型＋神經網路以第一方資料自動打興趣與關鍵字標籤", "confidence": "claimed" },
+        { "text": "分眾匯出至數十個付費與自有渠道", "confidence": "claimed" },
+        { "text": "與 AIXPERT 串接做群體行為預測、關鍵字智慧分群、重疊群優化", "confidence": "claimed" }
+      ],
+      "claimed_strengths": [
+        { "text": "預訓練模型，技術門檻低；把第一方資料加厚後再送去投放", "confidence": "claimed" }
+      ],
+      "evidence_reviews": [
+        { "text": "負面：進階 AI 功能學習曲線陡峭，缺少更友善的入門引導", "confidence": "verified", "source_url": "https://www.g2.com/products/appier-aixon/reviews" }
+      ],
+      "pricing": { "model": "enterprise_quote", "public": false, "value": null, "confidence": "none", "source_url": null },
+      "adoption": { "customers": null, "reviews_count": null, "rating": null, "confidence": "none" },
+      "pain_points": [
+        { "text": "與 AIRIS 的功能邊界是 Appier 產品線最明顯的定位模糊點", "type": "portfolio_overlap", "confidence": "inferred" },
+        { "text": "長期有被 AIRIS 吸收的可能", "type": "portfolio_overlap", "confidence": "inferred", "note": "推測，無官方訊息佐證" },
+        { "text": "學習曲線陡，影響採用深度", "type": "onboarding", "confidence": "verified" }
+      ],
+      "competitors": ["lotame", "liveramp", "amperity", "blueshift"],
+      "first_party_data_dependency": 4,
+      "acquisition_difficulty": "medium_high"
+    }
+  ],
+  "bundles": [
+    {
+      "id": "airis_aiqua",
+      "vendor_id": "appier",
+      "name": "AIRIS + AIQUA",
+      "components": ["airis", "aiqua"],
+      "line": "cross_line",
+      "source_url": "https://www.appier.com/en/products/airis_aiqua",
+      "claimed_strengths": [
+        { "text": "線上線下客戶資料統一與身分解析，釋放全渠道策略", "confidence": "claimed" },
+        { "text": "AI 驅動 360° 客戶輪廓，含即時興趣標籤與購買預測", "confidence": "claimed" },
+        { "text": "用簡單提示詞在數分鐘內建立含 GenAI 內容的多渠道個人化旅程", "confidence": "claimed" },
+        { "text": "AI 預測價值與即時分眾激活，回送廣告端鎖定高價值客群", "confidence": "claimed" }
+      ],
+      "pricing": { "model": "bundle_quote", "public": false, "value": null, "confidence": "none", "source_url": null },
+      "pain_points": [
+        { "text": "綑綁敘事與 G2 上「AIQUA 與 AIRIS 整合不順」的實測回饋直接衝突", "type": "claim_gap", "confidence": "verified", "note": "本專案落差分指標的第一個實例" }
+      ],
+      "competitors": ["bloomreach", "insider_one", "adobe_experience_cloud"],
+      "strategic_role": { "text": "對抗 Braze／Insider 這類純 engagement 平台的主要差異化敘事；推測用於推高 ARPC", "confidence": "inferred" }
+    }
+  ]
+}

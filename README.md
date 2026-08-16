@@ -21,9 +21,9 @@
 > 📌 v0.1.0 **只有文件與資料層，沒有實作程式碼**。以下是目前唯一能跑的驗證。
 
 ```bash
-# 檢查四份資料檔是否為合法 JSON
-for f in data/*.json; do python3 -m json.tool "$f" > /dev/null && echo "OK $f"; done
-# 預期：OK data/agents.json / OK data/capabilities.json / OK data/products.json / OK data/vendors.json
+# 檢查所有快照的資料檔是否為合法 JSON
+for f in data/*.json data/*/*.json; do python3 -m json.tool "$f" > /dev/null && echo "OK $f"; done
+# 預期：manifest.json 與 data/2026-08-07/、data/2026-08-14/ 各四份全部 OK
 ```
 
 M1 開工後的本地開發流程屆時補 `docs/DEPLOYMENT.md`，此處連結過去。
@@ -35,18 +35,22 @@ M1 開工後的本地開發流程屆時補 `docs/DEPLOYMENT.md`，此處連結�
 - 想知道要蓋什麼 → `docs/FEATURES.md`（Zone A–F 的功能規格與出口條件）
 - 想知道怎麼蓋 → `docs/ARCHITECTURE.md`（四層架構、資料模型、資料流）
 - 想知道為什麼這樣決定 → `prepare.md`（MC-000 起）
-- 想看已收集的 Appier 情報 → `data/products.json`、`data/agents.json`
-- 想看廠商層資料（含 91APP）→ `data/vendors.json`
+- 想看已收集的 Appier 情報 → `data/2026-08-14/products.json`、`data/2026-08-14/agents.json`
+- 想看廠商層資料（含 91APP）→ `data/2026-08-14/vendors.json`
+- 想知道有哪幾份快照、哪份最新 → `data/manifest.json`
 
 ## 專案結構
 
 ```
 martech-competitor-dashboard/
 ├── data/                    # 資料層：手動維護的結構化 JSON，唯一事實來源
-│   ├── vendors.json         # 廠商主檔（Appier 完整、91APP 僅廠商層）
-│   ├── products.json        # 產品明細，九個 Appier 產品
-│   ├── agents.json          # Agent 能力層，八個 Appier AI Agent
-│   └── capabilities.json    # 能力字典，能力矩陣的欄位定義
+│   ├── manifest.json        # 快照索引，標明哪一份是最新
+│   ├── 2026-08-07/          # 首版快照（只有 Appier）
+│   └── 2026-08-14/          # 當期快照 ← latest
+│       ├── vendors.json     # 廠商主檔（Appier 完整、91APP 僅廠商層）
+│       ├── products.json    # 產品明細，九個 Appier 產品
+│       ├── agents.json      # Agent 能力層，八個 Appier AI Agent
+│       └── capabilities.json # 能力字典，能力矩陣的欄位定義
 ├── docs/
 │   ├── ARCHITECTURE.md      # 四層架構、資料模型、資料流、技術棧
 │   └── FEATURES.md          # 功能規格、Zone A–F、M1–M3 里程碑與出口條件
@@ -60,7 +64,7 @@ martech-competitor-dashboard/
 
 ```bash
 # 資料契約檢查（M1 補 validate.js 之前的替代方案）
-for f in data/*.json; do python3 -m json.tool "$f" > /dev/null && echo "OK $f"; done
+for f in data/*.json data/*/*.json; do python3 -m json.tool "$f" > /dev/null && echo "OK $f"; done
 ```
 
 完整測試流程待 M1 實作層落地後補 `docs/TESTING.md`。

@@ -1,0 +1,23 @@
+{
+  "schema_version": "0.1.0",
+  "note": "快照索引。data/<YYYY-MM-DD>/ 每個目錄是一份完整快照，四份檔案齊備。歷史快照一律不可變——發現舊資料有誤只能在當期修正，改動歷史會讓版本 diff 憑空少掉一筆變化。",
+  "latest": "2026-08-14",
+  "previous": "2026-08-07",
+  "snapshot_cadence": "未定（每月一版 vs 事件驅動，見 prepare.md 待討論事項 2）",
+  "snapshots": [
+    {
+      "date": "2026-08-14",
+      "trigger": "新增對照廠商",
+      "vendors": ["appier", "91app"],
+      "changes": "vendors.json 新增 91APP 廠商層記錄；products／agents／capabilities 與前版相同",
+      "files": ["vendors.json", "products.json", "agents.json", "capabilities.json"]
+    },
+    {
+      "date": "2026-08-07",
+      "trigger": "首版快照",
+      "vendors": ["appier"],
+      "changes": "無前版可比",
+      "files": ["vendors.json", "products.json", "agents.json", "capabilities.json"]
+    }
+  ]
+}
