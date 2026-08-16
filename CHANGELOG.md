@@ -5,6 +5,25 @@
 ## [Unreleased]
 
 ### Added
+- **廠商層對照的兩張圖**（← `prepare.md` MC-014）：加入 91APP 之後，它一度只有一張卡、
+  不出現在任何圖裡。補上兩張兩家都畫得進去的圖：
+  - `src/charts/GrowthCompare.tsx` — 營收年增率並排長條，**期間不同時每根長條下方各標自己的期間**
+  - `src/charts/AvailabilityMatrix.tsx` — 6 個對照欄位 × 2 家的四態矩陣，符號與顏色各標一次
+  - `src/analysis/vendorMetrics.ts` — `availabilityMatrix` / `availabilityScore` / `revenueGrowth`
+    / `periodsAligned`，含 7 個測試
+  - Zone B 廠商卡新增「查得到的欄位」欄（Appier 5/6、91APP 2/6）
+  - **營收金額不並排**：兩家幣別不同，匯率不在資料層裡，換算值沒有 `source_url`
+- **M1 骨架落地——本專案第一批實作程式碼**：Vite + React + TypeScript，
+  `npm run dev` / `lint` / `test` / `build` / `validate` 五個指令全部可跑且全過
+  - `src/data/loader.ts` — 用 `import.meta.glob` 在建置期併入快照，依 manifest 取 latest／previous
+  - `src/types/data.ts` — `Confidence` 四態用 union type，填錯值編譯期即擋
+  - `src/analysis/productMetrics.ts` — 計價透明度分、渠道／垂直產業數；口碑分固定回 `null`
+    （九產品 `adoption.rating` 全為 `null`），含 8 個 Vitest 測試
+  - `src/charts/PricingBar.tsx` — 手寫 SVG 長條圖，圖說兩塊固定跟在下方（← MC-008）
+  - `src/zones/` — Zone A 報告區、Zone B 廠商快照＋產品層級橫向比（← MC-010）、
+    Zone E 產品明細、Zone F 來源清單（**沿繼承鏈收集來源**）
+  - `src/export/` — CSV／Markdown／PDF 的序列化函式
+  - `scripts/validate.js` — 資料契約檢查，**已實作 MC-013 繼承鏈**，只對 `latest` 快照 fail
 - **`data/` 改為日期快照目錄**（← `prepare.md` MC-012）：`data/2026-08-07/`（首版，
   內容取自 v0.1.0 commit，逐位元組相同）與 `data/2026-08-14/`（當期），
   加 `data/manifest.json` 標明 `latest` / `previous` 與各快照的觸發原因

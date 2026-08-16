@@ -1,0 +1,486 @@
+/* 色票用 CSS 變數，因為匯出 PDF 要靠 @media print 覆寫（← ARCHITECTURE 技術棧） */
+
+:root {
+  color-scheme: light dark;
+  --paper: #f1f3f2;
+  --surface: #fbfcfb;
+  --surface-2: #e9edeb;
+  --ink: #16232a;
+  --ink-2: #4e5f64;
+  --ink-3: #7a8a8d;
+  --rule: #d3dad8;
+  --rule-strong: #b6c1be;
+  --accent: #14635e;
+  --accent-soft: #dbe8e6;
+  --signal: #9c6414;
+  --signal-soft: #f0e3cc;
+  --good: #37704a;
+  --good-soft: #dce9de;
+  --alert: #9c3728;
+  --alert-soft: #f2dcd7;
+  --font-body: system-ui, -apple-system, 'Noto Sans TC', 'PingFang TC', sans-serif;
+  --font-mono: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --paper: #0f1517;
+    --surface: #161e21;
+    --surface-2: #1d272a;
+    --ink: #e7edea;
+    --ink-2: #a2b2b4;
+    --ink-3: #75868a;
+    --rule: #293538;
+    --rule-strong: #3a4a4e;
+    --accent: #63beb3;
+    --accent-soft: #16332f;
+    --signal: #d2a052;
+    --signal-soft: #33280f;
+    --good: #6fb183;
+    --good-soft: #172c1d;
+    --alert: #d9705c;
+    --alert-soft: #35201b;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0 24px 72px;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.masthead {
+  padding-top: 48px;
+  border-bottom: 3px solid var(--ink);
+  padding-bottom: 20px;
+}
+
+.kicker {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 12px;
+}
+
+h1 {
+  font-size: clamp(24px, 3.6vw, 34px);
+  line-height: 1.2;
+  margin: 0 0 12px;
+  max-width: 24ch;
+}
+
+.standfirst {
+  margin: 0;
+  color: var(--ink-2);
+  max-width: 60ch;
+}
+
+.zone {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.zone-head {
+  border-top: 1px solid var(--rule-strong);
+  padding-top: 12px;
+}
+
+.zone-num {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+
+h2 {
+  font-size: clamp(19px, 2.4vw, 25px);
+  margin: 4px 0 0;
+}
+
+h3 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.zone-note,
+.capture-date {
+  margin: 6px 0 0;
+  color: var(--ink-2);
+  font-size: 14px;
+}
+
+.stat-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1px;
+  background: var(--rule);
+  border: 1px solid var(--rule);
+}
+
+.stat {
+  background: var(--surface);
+  padding: 14px 16px;
+}
+
+.stat-label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+
+.stat-value {
+  font-size: 26px;
+  font-variant-numeric: tabular-nums;
+}
+
+.placeholder,
+.caveat {
+  background: var(--signal-soft);
+  border-left: 3px solid var(--signal);
+  padding: 12px 16px;
+  font-size: 14px;
+  color: var(--ink-2);
+  margin: 0;
+}
+
+.vendor-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.vendor-card,
+.product-card,
+.chart {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  padding: 16px 18px;
+  margin: 0;
+}
+
+.vendor-positioning {
+  color: var(--ink-2);
+  font-size: 14px;
+  margin: 6px 0 12px;
+}
+
+.vendor-fields,
+.product-fields {
+  display: grid;
+  grid-template-columns: 92px 1fr;
+  gap: 6px 12px;
+  margin: 0;
+  font-size: 14px;
+}
+
+.vendor-fields dt,
+.product-fields dt {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  padding-top: 3px;
+}
+
+.vendor-fields dd,
+.product-fields dd {
+  margin: 0;
+}
+
+.badge {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  text-transform: uppercase;
+  padding: 2px 7px;
+  background: var(--good-soft);
+  color: var(--good);
+}
+
+.badge-partial {
+  background: var(--signal-soft);
+  color: var(--signal);
+}
+
+.chip {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  padding: 2px 7px;
+  border-radius: 2px;
+  white-space: nowrap;
+}
+
+.chip-verified {
+  background: var(--good-soft);
+  color: var(--good);
+}
+.chip-claimed {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+.chip-inferred {
+  background: var(--signal-soft);
+  color: var(--signal);
+}
+.chip-none {
+  background: var(--surface-2);
+  color: var(--ink-3);
+}
+
+.unknown {
+  color: var(--ink-3);
+}
+
+/* ---------- 圖表 ---------- */
+
+.chart-title {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.chart-scroll {
+  overflow-x: auto;
+}
+
+/* 撐滿容器但不無限放大——字太大反而難讀 */
+.chart-scroll svg {
+  width: 100%;
+  min-width: 480px;
+  max-width: 720px;
+  height: auto;
+}
+
+.bar {
+  fill: var(--accent);
+}
+
+.bar-unknown {
+  fill: var(--rule-strong);
+}
+
+.bar-label {
+  fill: var(--ink-2);
+  font-size: 12px;
+}
+
+.bar-value {
+  fill: var(--ink-3);
+  font-family: var(--font-mono);
+  font-size: 11px;
+}
+
+/* 期間標示——兩家期間不同時，這行字是唯一防止誤讀的東西 */
+.bar-period {
+  fill: var(--ink-3);
+  font-family: var(--font-mono);
+  font-size: 10px;
+}
+
+/* ---------- 資料可得性矩陣 ---------- */
+
+table.matrix {
+  min-width: 420px;
+}
+
+table.matrix th[scope='row'] {
+  text-align: left;
+  font-weight: 600;
+  font-size: 13.5px;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--rule);
+  white-space: nowrap;
+}
+
+table.matrix .cell {
+  display: table-cell;
+  white-space: nowrap;
+}
+
+.cell-glyph {
+  font-size: 15px;
+  margin-right: 7px;
+  vertical-align: -1px;
+}
+
+.cell-text {
+  font-size: 12.5px;
+}
+
+.cell-verified {
+  background: var(--good-soft);
+  color: var(--good);
+}
+.cell-claimed {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+.cell-inferred {
+  background: var(--signal-soft);
+  color: var(--signal);
+}
+.cell-none {
+  background: var(--surface-2);
+  color: var(--ink-3);
+}
+
+.axis-baseline {
+  stroke: var(--rule-strong);
+  stroke-width: 1;
+}
+
+.axis-grid {
+  stroke: var(--rule);
+  stroke-width: 1;
+  stroke-dasharray: 2 3;
+}
+
+.axis-tick {
+  fill: var(--ink-3);
+  font-family: var(--font-mono);
+  font-size: 10px;
+}
+
+.caption-blocks {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 12px;
+  margin-top: 16px;
+  border-top: 1px solid var(--rule);
+  padding-top: 14px;
+}
+
+.caption p {
+  margin: 4px 0 0;
+  font-size: 13.5px;
+  color: var(--ink-2);
+}
+
+.caption-label {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.takeaway {
+  color: var(--ink);
+}
+
+.evidence {
+  color: var(--ink-3);
+  font-family: var(--font-mono);
+  font-size: 11px;
+}
+
+/* ---------- 表格 ---------- */
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 16px;
+}
+
+.product-head {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 10px;
+  margin-bottom: 12px;
+}
+
+.product-tag {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--ink-3);
+}
+
+.table-scroll {
+  overflow-x: auto;
+  border: 1px solid var(--rule);
+  background: var(--surface);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 640px;
+  font-size: 13.5px;
+}
+
+thead th {
+  text-align: left;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  font-weight: 400;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--rule-strong);
+}
+
+tbody td {
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--rule);
+  vertical-align: top;
+}
+
+.source-url a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.page-foot {
+  border-top: 1px solid var(--rule-strong);
+  padding-top: 14px;
+  font-size: 13px;
+  color: var(--ink-3);
+}
+
+/* ---------- 匯出 PDF：互動元件展開為靜態，圖說不得被收合 ---------- */
+
+@media print {
+  body {
+    background: #fff;
+    padding: 0;
+  }
+  .chart-scroll,
+  .table-scroll {
+    overflow: visible;
+  }
+  .caption-blocks {
+    display: block;
+  }
+  .zone {
+    break-inside: avoid;
+  }
+}
