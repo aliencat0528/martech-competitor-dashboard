@@ -5,6 +5,14 @@
 ## [Unreleased]
 
 ### Added
+- **廠商層對照的兩張圖**（← `prepare.md` MC-014）：加入 91APP 之後，它一度只有一張卡、
+  不出現在任何圖裡。補上兩張兩家都畫得進去的圖：
+  - `src/charts/GrowthCompare.tsx` — 營收年增率並排長條，**期間不同時每根長條下方各標自己的期間**
+  - `src/charts/AvailabilityMatrix.tsx` — 6 個對照欄位 × 2 家的四態矩陣，符號與顏色各標一次
+  - `src/analysis/vendorMetrics.ts` — `availabilityMatrix` / `availabilityScore` / `revenueGrowth`
+    / `periodsAligned`，含 7 個測試
+  - Zone B 廠商卡新增「查得到的欄位」欄（Appier 5/6、91APP 2/6）
+  - **營收金額不並排**：兩家幣別不同，匯率不在資料層裡，換算值沒有 `source_url`
 - **M1 骨架落地——本專案第一批實作程式碼**：Vite + React + TypeScript，
   `npm run dev` / `lint` / `test` / `build` / `validate` 五個指令全部可跑且全過
   - `src/data/loader.ts` — 用 `import.meta.glob` 在建置期併入快照，依 manifest 取 latest／previous

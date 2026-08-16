@@ -296,6 +296,60 @@ h3 {
   font-size: 11px;
 }
 
+/* 期間標示——兩家期間不同時，這行字是唯一防止誤讀的東西 */
+.bar-period {
+  fill: var(--ink-3);
+  font-family: var(--font-mono);
+  font-size: 10px;
+}
+
+/* ---------- 資料可得性矩陣 ---------- */
+
+table.matrix {
+  min-width: 420px;
+}
+
+table.matrix th[scope='row'] {
+  text-align: left;
+  font-weight: 600;
+  font-size: 13.5px;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--rule);
+  white-space: nowrap;
+}
+
+table.matrix .cell {
+  display: table-cell;
+  white-space: nowrap;
+}
+
+.cell-glyph {
+  font-size: 15px;
+  margin-right: 7px;
+  vertical-align: -1px;
+}
+
+.cell-text {
+  font-size: 12.5px;
+}
+
+.cell-verified {
+  background: var(--good-soft);
+  color: var(--good);
+}
+.cell-claimed {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+.cell-inferred {
+  background: var(--signal-soft);
+  color: var(--signal);
+}
+.cell-none {
+  background: var(--surface-2);
+  color: var(--ink-3);
+}
+
 .axis-baseline {
   stroke: var(--rule-strong);
   stroke-width: 1;
