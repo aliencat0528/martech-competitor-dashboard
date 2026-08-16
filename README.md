@@ -18,15 +18,18 @@
 
 ## 快速開始
 
-> 📌 v0.1.0 **只有文件與資料層，沒有實作程式碼**。以下是目前唯一能跑的驗證。
-
 ```bash
-# 檢查所有快照的資料檔是否為合法 JSON
-for f in data/*.json data/*/*.json; do python3 -m json.tool "$f" > /dev/null && echo "OK $f"; done
-# 預期：manifest.json 與 data/2026-08-07/、data/2026-08-14/ 各四份全部 OK
+npm install
+npm run dev        # 開發伺服器，頁面顯示 Zone A／B／E／F
+npm run validate   # 資料契約檢查（含就近繼承）
+npm test           # 分析層單元測試
+npm run build      # tsc --noEmit + vite build
 ```
 
-M1 開工後的本地開發流程屆時補 `docs/DEPLOYMENT.md`，此處連結過去。
+> 📌 M1 骨架已落地：Zone A／B／E／F 可讀、計價透明度圖含圖說、三種匯出的序列化函式已寫。
+> **Zone C 能力矩陣（M2）與 Zone D 定位圖尚未實作**，匯出函式尚未接到 UI 按鈕。
+
+部署設定（GitHub Pages／Vercel）待實際部署時補 `docs/DEPLOYMENT.md`。
 
 ## 使用方式
 
@@ -51,6 +54,14 @@ martech-competitor-dashboard/
 │       ├── products.json    # 產品明細，九個 Appier 產品
 │       ├── agents.json      # Agent 能力層，八個 Appier AI Agent
 │       └── capabilities.json # 能力字典，能力矩陣的欄位定義
+├── src/
+│   ├── data/loader.ts       # 讀 manifest → 載入快照
+│   ├── types/               # confidence 四態等共用型別
+│   ├── analysis/            # L2 純函式（含測試）
+│   ├── charts/              # 圖說靜態文字 ＋ 手寫 SVG 圖元件
+│   ├── zones/               # L3 Zone A／B／E／F
+│   └── export/              # L4 csv / markdown / pdf
+├── scripts/validate.js      # 資料契約檢查，含就近繼承
 ├── docs/
 │   ├── ARCHITECTURE.md      # 四層架構、資料模型、資料流、技術棧
 │   └── FEATURES.md          # 功能規格、Zone A–F、M1–M3 里程碑與出口條件
@@ -63,11 +74,16 @@ martech-competitor-dashboard/
 ## 測試
 
 ```bash
-# 資料契約檢查（M1 補 validate.js 之前的替代方案）
-for f in data/*.json data/*/*.json; do python3 -m json.tool "$f" > /dev/null && echo "OK $f"; done
+npm run validate   # 資料契約：三個中繼欄位、confidence 四態、就近繼承
+npm test           # 分析層純函式（Vitest）
+npm run lint       # ESLint
+npm run build      # 型別檢查 + 建置
 ```
 
-完整測試流程待 M1 實作層落地後補 `docs/TESTING.md`。
+**契約檢查只對 `latest` 快照 fail**——歷史快照不可修，讓它擋 CI 只會逼人去改歷史
+（← `CLAUDE.md` 資料層硬規則 7）。目前 `data/2026-08-07/` 有 16 筆早於 MC-013 的資料列為報告。
+
+呈現層不寫測試——作品集專案的測試該用在「分數算得對不對」這種會被追問的地方。
 
 ## 開發階段 / 里程碑
 

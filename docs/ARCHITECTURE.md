@@ -205,14 +205,33 @@ martech-competitor-dashboard/
 │   ├── manifest.json      # 快照索引：latest / previous / 各快照的觸發原因
 │   └── <YYYY-MM-DD>/      # 一個日期＝一份完整快照，歷史快照不可變（← MC-012）
 ├── src/
+│   ├── data/loader.ts     # 讀 manifest → 載入 latest／previous 快照
 │   ├── analysis/          # L2 純函式，逐一對應一個指標；含圖說 summary 的句型模板
 │   ├── charts/            # 圖說「怎麼讀」的靜態文字（人寫，隨圖不隨資料）＋ SVG 圖元件
 │   ├── zones/             # L3 Zone A–F
 │   ├── export/            # L4 pdf.ts / csv.ts / markdown.ts
-│   └── types/             # confidence 四態等共用型別
+│   ├── types/             # confidence 四態等共用型別
+│   └── styles.css         # CSS 變數 ＋ @media print
 ├── scripts/validate.js    # 資料契約檢查，CI 與 commit 前跑
 └── docs/
 ```
+
+### M1 骨架已落地的部分
+
+| 檔案 | 做什麼 | 狀態 |
+|---|---|---|
+| `src/data/loader.ts` | 用 `import.meta.glob` 在建置期併入快照，依 manifest 取 latest／previous | ✅ |
+| `src/types/data.ts` | `Confidence` 四態用 union type，填錯值編譯期就擋 | ✅ |
+| `src/analysis/productMetrics.ts` | 計價透明度分、渠道數、垂直產業數；口碑分固定回 `null` | ✅ 含 8 個測試 |
+| `src/charts/PricingBar.tsx` | 手寫 SVG 長條圖，圖說兩塊固定跟在下方 | ✅ |
+| `src/zones/ZoneA/B/E/F.tsx` | 報告區、廠商快照＋產品橫向比、產品明細、來源清單 | ✅ |
+| `src/export/{csv,markdown,pdf}.ts` | 三種匯出的序列化函式 | ⚠️ 函式已寫，尚未接到 UI 按鈕 |
+| `scripts/validate.js` | 契約檢查，**已實作 MC-013 的繼承鏈** | ✅ |
+| Zone C／Zone D | 能力矩陣（M2）、定位圖（M1 產品層級軸） | ❌ 未實作 |
+
+**為什麼 loader 用 `import.meta.glob` 而不是執行期 `fetch`**：靜態部署沒有後端可以列目錄，
+執行期要 fetch 得先知道有哪些檔案，而那份清單就是 manifest 本身——會變成雞生蛋。
+建置期併入則順便讓 TypeScript 檢查得到資料形狀。
 
 ---
 
