@@ -1,0 +1,4489 @@
+{
+  "schema_version": "0.1.0",
+  "captured_at": "2026-08-17",
+  "note": "產品 × 能力的格子值。四態判定直接套 capabilities.json 的 cell_states 定義，不另立標準。basis 記錄判斷取自產品的哪個欄位；source_url 沿用該產品的來源。**本檔為 AI 依既有欄位整理的草稿，依 CLAUDE.md 資料層硬規則 6 須經人工覆核**，reviewed 欄位為 false 即代表尚未覆核。",
+  "reviewed": false,
+  "reviewed_by": null,
+  "cells": [
+    {
+      "product_id": "aibid",
+      "capability_id": "bid_optimization",
+      "state": "claimed_only",
+      "basis": "features",
+      "note": "深度學習跨版位即時動態調價，第三方獎項僅見於 Appier 自述",
+      "source_url": "https://www.appier.com/en/products/aibid",
+      "confidence": "claimed",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aibid",
+      "capability_id": "cross_platform_ads",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aibid",
+      "capability_id": "retargeting",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aibid",
+      "capability_id": "creative_generation",
+      "state": "claimed_only",
+      "basis": "features",
+      "note": "GenAI 動態素材個人化",
+      "source_url": "https://www.appier.com/en/products/aibid",
+      "confidence": "claimed",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aibid",
+      "capability_id": "incrementality",
+      "state": "none",
+      "basis": "pain_points",
+      "note": "痛點明載「本體不含增量測試」，由 ROI Agent 補位",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aibid",
+      "capability_id": "journey_orchestration",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aibid",
+      "capability_id": "recommendation",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aibid",
+      "capability_id": "conversational",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aibid",
+      "capability_id": "conversion_optimization",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aibid",
+      "capability_id": "experimentation",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aibid",
+      "capability_id": "identity_resolution",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aibid",
+      "capability_id": "cdp_unification",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aibid",
+      "capability_id": "predictive_scoring",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aibid",
+      "capability_id": "audience_enrichment",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aibid",
+      "capability_id": "audience_activation",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aibid",
+      "capability_id": "agentic_autonomy",
+      "state": "claimed_only",
+      "basis": "claimed_strengths",
+      "note": "以早期正向訊號加速模型收斂，屬自我學習迴圈描述",
+      "source_url": "https://www.appier.com/en/products/aibid",
+      "confidence": "claimed",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aibid",
+      "capability_id": "agentic_evidence",
+      "state": "none",
+      "basis": "evidence_reviews",
+      "note": "客戶回饋無公開量化 benchmark",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aibid",
+      "capability_id": "copilot",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aibid",
+      "capability_id": "no_code",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aibid",
+      "capability_id": "pricing_transparency",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aibid",
+      "capability_id": "fast_onboarding",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aibid",
+      "capability_id": "portfolio_integration",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aibid",
+      "capability_id": "storefront",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aibid",
+      "capability_id": "payments",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aibid",
+      "capability_id": "fulfillment",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aibid",
+      "capability_id": "inventory_sync",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aibid",
+      "capability_id": "pos_integration",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aibid",
+      "capability_id": "store_staff_tools",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aixpert",
+      "capability_id": "bid_optimization",
+      "state": "claimed_only",
+      "basis": "features",
+      "note": "24/7 自動操盤含出價策略優化",
+      "source_url": "https://www.appier.com/en/products/aixpert",
+      "confidence": "claimed",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aixpert",
+      "capability_id": "cross_platform_ads",
+      "state": "partial",
+      "basis": "pain_points",
+      "note": "涵蓋 ASA／TikTok／Facebook／Google／X，但官網僅 ASA 有具體功能描述，整合深度不一",
+      "source_url": "https://www.appier.com/en/products/aixpert",
+      "confidence": "verified",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aixpert",
+      "capability_id": "retargeting",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aixpert",
+      "capability_id": "creative_generation",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aixpert",
+      "capability_id": "incrementality",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aixpert",
+      "capability_id": "journey_orchestration",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aixpert",
+      "capability_id": "recommendation",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aixpert",
+      "capability_id": "conversational",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aixpert",
+      "capability_id": "conversion_optimization",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aixpert",
+      "capability_id": "experimentation",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aixpert",
+      "capability_id": "identity_resolution",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aixpert",
+      "capability_id": "cdp_unification",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aixpert",
+      "capability_id": "predictive_scoring",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aixpert",
+      "capability_id": "audience_enrichment",
+      "state": "claimed_only",
+      "basis": "features",
+      "note": "神經網路模型發掘受眾分群",
+      "source_url": "https://www.appier.com/en/products/aixpert",
+      "confidence": "claimed",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aixpert",
+      "capability_id": "audience_activation",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aixpert",
+      "capability_id": "agentic_autonomy",
+      "state": "claimed_only",
+      "basis": "claimed_strengths",
+      "note": "Autopilot 24/7 自動操盤",
+      "source_url": "https://www.appier.com/en/products/aixpert",
+      "confidence": "claimed",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aixpert",
+      "capability_id": "agentic_evidence",
+      "state": "none",
+      "basis": "evidence_reviews",
+      "note": "Perfect Corp. 案例無量化數字",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aixpert",
+      "capability_id": "copilot",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aixpert",
+      "capability_id": "no_code",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aixpert",
+      "capability_id": "pricing_transparency",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aixpert",
+      "capability_id": "fast_onboarding",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aixpert",
+      "capability_id": "portfolio_integration",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aixpert",
+      "capability_id": "storefront",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aixpert",
+      "capability_id": "payments",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aixpert",
+      "capability_id": "fulfillment",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aixpert",
+      "capability_id": "inventory_sync",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aixpert",
+      "capability_id": "pos_integration",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aixpert",
+      "capability_id": "store_staff_tools",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "retargeting",
+      "capability_id": "bid_optimization",
+      "state": "claimed_only",
+      "basis": "features",
+      "note": "即時行為分析驅動出價調整",
+      "source_url": "https://www.appier.com/en/products/retargeting",
+      "confidence": "claimed",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "retargeting",
+      "capability_id": "cross_platform_ads",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "retargeting",
+      "capability_id": "retargeting",
+      "state": "full",
+      "basis": "evidence_reviews",
+      "note": "Appier 以 CrossX 起家，為最成熟的產品線（verified）",
+      "source_url": "https://www.appier.com/en/products/retargeting",
+      "confidence": "verified",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "retargeting",
+      "capability_id": "creative_generation",
+      "state": "partial",
+      "basis": "features",
+      "note": "GenAI 素材需整合 AdCreative.ai，非本體功能",
+      "source_url": "https://www.appier.com/en/products/retargeting",
+      "confidence": "claimed",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "retargeting",
+      "capability_id": "incrementality",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "retargeting",
+      "capability_id": "journey_orchestration",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "retargeting",
+      "capability_id": "recommendation",
+      "state": "claimed_only",
+      "basis": "features",
+      "note": "LLM 驅動的商品推薦引擎",
+      "source_url": "https://www.appier.com/en/products/retargeting",
+      "confidence": "claimed",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "retargeting",
+      "capability_id": "conversational",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "retargeting",
+      "capability_id": "conversion_optimization",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "retargeting",
+      "capability_id": "experimentation",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "retargeting",
+      "capability_id": "identity_resolution",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "retargeting",
+      "capability_id": "cdp_unification",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "retargeting",
+      "capability_id": "predictive_scoring",
+      "state": "claimed_only",
+      "basis": "features",
+      "note": "以 ROAS 切分高價值與流失風險受眾",
+      "source_url": "https://www.appier.com/en/products/retargeting",
+      "confidence": "claimed",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "retargeting",
+      "capability_id": "audience_enrichment",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "retargeting",
+      "capability_id": "audience_activation",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "retargeting",
+      "capability_id": "agentic_autonomy",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "retargeting",
+      "capability_id": "agentic_evidence",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "retargeting",
+      "capability_id": "copilot",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "retargeting",
+      "capability_id": "no_code",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "retargeting",
+      "capability_id": "pricing_transparency",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "retargeting",
+      "capability_id": "fast_onboarding",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "retargeting",
+      "capability_id": "portfolio_integration",
+      "state": "claimed_only",
+      "basis": "features",
+      "note": "整合 AdCreative.ai，僅官方說法無第三方佐證",
+      "source_url": "https://www.appier.com/en/products/retargeting",
+      "confidence": "claimed",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "retargeting",
+      "capability_id": "storefront",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "retargeting",
+      "capability_id": "payments",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "retargeting",
+      "capability_id": "fulfillment",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "retargeting",
+      "capability_id": "inventory_sync",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "retargeting",
+      "capability_id": "pos_integration",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "retargeting",
+      "capability_id": "store_staff_tools",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "adcreative_ai",
+      "capability_id": "bid_optimization",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "adcreative_ai",
+      "capability_id": "cross_platform_ads",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "adcreative_ai",
+      "capability_id": "retargeting",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "adcreative_ai",
+      "capability_id": "creative_generation",
+      "state": "full",
+      "basis": "evidence_reviews",
+      "note": "功能欄位為 verified，且有具名客戶與 ARR 佐證",
+      "source_url": "https://www.prnewswire.com/news-releases/appier-acquires-adcreativeai-in-strategic-move-to-lead-generative-ai-powered-advertising-and-marketing-innovation-302374630.html",
+      "confidence": "verified",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "adcreative_ai",
+      "capability_id": "incrementality",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "adcreative_ai",
+      "capability_id": "journey_orchestration",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "adcreative_ai",
+      "capability_id": "recommendation",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "adcreative_ai",
+      "capability_id": "conversational",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "adcreative_ai",
+      "capability_id": "conversion_optimization",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "adcreative_ai",
+      "capability_id": "experimentation",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "adcreative_ai",
+      "capability_id": "identity_resolution",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "adcreative_ai",
+      "capability_id": "cdp_unification",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "adcreative_ai",
+      "capability_id": "predictive_scoring",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "adcreative_ai",
+      "capability_id": "audience_enrichment",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "adcreative_ai",
+      "capability_id": "audience_activation",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "adcreative_ai",
+      "capability_id": "agentic_autonomy",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "adcreative_ai",
+      "capability_id": "agentic_evidence",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "adcreative_ai",
+      "capability_id": "copilot",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "adcreative_ai",
+      "capability_id": "no_code",
+      "state": "claimed_only",
+      "basis": "claimed_strengths",
+      "note": "自助訂閱、買方為設計與中小企業主",
+      "source_url": "https://www.prnewswire.com/news-releases/appier-acquires-adcreativeai-in-strategic-move-to-lead-generative-ai-powered-advertising-and-marketing-innovation-302374630.html",
+      "confidence": "claimed",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "adcreative_ai",
+      "capability_id": "pricing_transparency",
+      "state": "full",
+      "basis": "pricing",
+      "note": "官網公開自助訂閱級距，pricing.confidence 為 verified",
+      "source_url": "https://www.prnewswire.com/news-releases/appier-acquires-adcreativeai-in-strategic-move-to-lead-generative-ai-powered-advertising-and-marketing-innovation-302374630.html",
+      "confidence": "verified",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "adcreative_ai",
+      "capability_id": "fast_onboarding",
+      "state": "claimed_only",
+      "basis": "claimed_strengths",
+      "note": "刷卡即用，無需導入專案",
+      "source_url": "https://www.prnewswire.com/news-releases/appier-acquires-adcreativeai-in-strategic-move-to-lead-generative-ai-powered-advertising-and-marketing-innovation-302374630.html",
+      "confidence": "claimed",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "adcreative_ai",
+      "capability_id": "portfolio_integration",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "adcreative_ai",
+      "capability_id": "storefront",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "adcreative_ai",
+      "capability_id": "payments",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "adcreative_ai",
+      "capability_id": "fulfillment",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "adcreative_ai",
+      "capability_id": "inventory_sync",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "adcreative_ai",
+      "capability_id": "pos_integration",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "adcreative_ai",
+      "capability_id": "store_staff_tools",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aiqua",
+      "capability_id": "bid_optimization",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aiqua",
+      "capability_id": "cross_platform_ads",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aiqua",
+      "capability_id": "retargeting",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aiqua",
+      "capability_id": "creative_generation",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aiqua",
+      "capability_id": "incrementality",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aiqua",
+      "capability_id": "journey_orchestration",
+      "state": "full",
+      "basis": "evidence_reviews",
+      "note": "第三方評論明載跨渠道 campaign 設定有感（verified）",
+      "source_url": "https://www.appier.com/en/products/aiqua",
+      "confidence": "verified",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aiqua",
+      "capability_id": "recommendation",
+      "state": "full",
+      "basis": "evidence_reviews",
+      "note": "第三方評論明載 AI 個人化模型有感（verified）",
+      "source_url": "https://www.appier.com/en/products/aiqua",
+      "confidence": "verified",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aiqua",
+      "capability_id": "conversational",
+      "state": "partial",
+      "basis": "features",
+      "note": "渠道含 social_messaging，但對話流本體在 BotBonnie，需搭配其他產品",
+      "source_url": "https://www.appier.com/en/products/aiqua",
+      "confidence": "claimed",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aiqua",
+      "capability_id": "conversion_optimization",
+      "state": "claimed_only",
+      "basis": "features",
+      "note": "行為觸發自動化（購物車／收藏提醒）",
+      "source_url": "https://www.appier.com/en/products/aiqua",
+      "confidence": "claimed",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aiqua",
+      "capability_id": "experimentation",
+      "state": "claimed_only",
+      "basis": "features",
+      "note": "A/B 與多變量測試",
+      "source_url": "https://www.appier.com/en/products/aiqua",
+      "confidence": "claimed",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aiqua",
+      "capability_id": "identity_resolution",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aiqua",
+      "capability_id": "cdp_unification",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aiqua",
+      "capability_id": "predictive_scoring",
+      "state": "claimed_only",
+      "basis": "features",
+      "note": "即時分眾與預測性受眾",
+      "source_url": "https://www.appier.com/en/products/aiqua",
+      "confidence": "claimed",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aiqua",
+      "capability_id": "audience_enrichment",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aiqua",
+      "capability_id": "audience_activation",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aiqua",
+      "capability_id": "agentic_autonomy",
+      "state": "claimed_only",
+      "basis": "claimed_strengths",
+      "note": "Autopilot 持續優化、免人工介入",
+      "source_url": "https://www.appier.com/en/products/aiqua",
+      "confidence": "claimed",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aiqua",
+      "capability_id": "agentic_evidence",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aiqua",
+      "capability_id": "copilot",
+      "state": "claimed_only",
+      "basis": "claimed_strengths",
+      "note": "AI Copilot 生成 A/B 文案變體",
+      "source_url": "https://www.appier.com/en/products/aiqua",
+      "confidence": "claimed",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aiqua",
+      "capability_id": "no_code",
+      "state": "partial",
+      "basis": "evidence_reviews",
+      "note": "Creative Studio 無碼編輯器，但第三方評論指出進階／beta 功能需客服帶（verified）",
+      "source_url": "https://www.appier.com/en/products/aiqua",
+      "confidence": "verified",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aiqua",
+      "capability_id": "pricing_transparency",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aiqua",
+      "capability_id": "fast_onboarding",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aiqua",
+      "capability_id": "portfolio_integration",
+      "state": "partial",
+      "basis": "pain_points",
+      "note": "官方主打與 AIRIS 整合，第三方評論指出資料交換不如預期流暢（verified）",
+      "source_url": "https://www.appier.com/en/products/aiqua",
+      "confidence": "verified",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aiqua",
+      "capability_id": "storefront",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aiqua",
+      "capability_id": "payments",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aiqua",
+      "capability_id": "fulfillment",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aiqua",
+      "capability_id": "inventory_sync",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aiqua",
+      "capability_id": "pos_integration",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aiqua",
+      "capability_id": "store_staff_tools",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aideal",
+      "capability_id": "bid_optimization",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aideal",
+      "capability_id": "cross_platform_ads",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aideal",
+      "capability_id": "retargeting",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aideal",
+      "capability_id": "creative_generation",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aideal",
+      "capability_id": "incrementality",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aideal",
+      "capability_id": "journey_orchestration",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aideal",
+      "capability_id": "recommendation",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aideal",
+      "capability_id": "conversational",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aideal",
+      "capability_id": "conversion_optimization",
+      "state": "claimed_only",
+      "basis": "features",
+      "note": "即時預測猶豫買家並控制發券時機，客戶案例僅官方說法",
+      "source_url": "https://www.appier.com/en/products/aideal",
+      "confidence": "claimed",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aideal",
+      "capability_id": "experimentation",
+      "state": "claimed_only",
+      "basis": "features",
+      "note": "A/B 測試驗證對猶豫用戶的成效",
+      "source_url": "https://www.appier.com/en/products/aideal",
+      "confidence": "claimed",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aideal",
+      "capability_id": "identity_resolution",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aideal",
+      "capability_id": "cdp_unification",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aideal",
+      "capability_id": "predictive_scoring",
+      "state": "claimed_only",
+      "basis": "features",
+      "note": "分析 400+ 屬性預測猶豫程度",
+      "source_url": "https://www.appier.com/en/products/aideal",
+      "confidence": "claimed",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aideal",
+      "capability_id": "audience_enrichment",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aideal",
+      "capability_id": "audience_activation",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aideal",
+      "capability_id": "agentic_autonomy",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aideal",
+      "capability_id": "agentic_evidence",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aideal",
+      "capability_id": "copilot",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aideal",
+      "capability_id": "no_code",
+      "state": "claimed_only",
+      "basis": "claimed_strengths",
+      "note": "不需規則設定，全靠機器學習",
+      "source_url": "https://www.appier.com/en/products/aideal",
+      "confidence": "claimed",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aideal",
+      "capability_id": "pricing_transparency",
+      "state": "partial",
+      "basis": "pricing",
+      "note": "成效計價的計費基準公開且可驗證，但無公開價格級距",
+      "source_url": "https://www.appier.com/en/products/aideal",
+      "confidence": "verified",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aideal",
+      "capability_id": "fast_onboarding",
+      "state": "claimed_only",
+      "basis": "claimed_strengths",
+      "note": "GTM 埋碼約一週上線",
+      "source_url": "https://www.appier.com/en/products/aideal",
+      "confidence": "claimed",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aideal",
+      "capability_id": "portfolio_integration",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aideal",
+      "capability_id": "storefront",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aideal",
+      "capability_id": "payments",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aideal",
+      "capability_id": "fulfillment",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aideal",
+      "capability_id": "inventory_sync",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aideal",
+      "capability_id": "pos_integration",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aideal",
+      "capability_id": "store_staff_tools",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "botbonnie",
+      "capability_id": "bid_optimization",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "botbonnie",
+      "capability_id": "cross_platform_ads",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "botbonnie",
+      "capability_id": "retargeting",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "botbonnie",
+      "capability_id": "creative_generation",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "botbonnie",
+      "capability_id": "incrementality",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "botbonnie",
+      "capability_id": "journey_orchestration",
+      "state": "claimed_only",
+      "basis": "features",
+      "note": "行為觸發的自動化對話流",
+      "source_url": "https://www.appier.com/en/products/botbonnie",
+      "confidence": "claimed",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "botbonnie",
+      "capability_id": "recommendation",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "botbonnie",
+      "capability_id": "conversational",
+      "state": "full",
+      "basis": "evidence_reviews",
+      "note": "六個通訊渠道單一後台，第三方評論肯定串接與新版聊天功能（verified）",
+      "source_url": "https://www.appier.com/en/products/botbonnie",
+      "confidence": "verified",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "botbonnie",
+      "capability_id": "conversion_optimization",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "botbonnie",
+      "capability_id": "experimentation",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "botbonnie",
+      "capability_id": "identity_resolution",
+      "state": "claimed_only",
+      "basis": "claimed_strengths",
+      "note": "跨訊息、網站、App 的全渠道資料統一",
+      "source_url": "https://www.appier.com/en/products/botbonnie",
+      "confidence": "claimed",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "botbonnie",
+      "capability_id": "cdp_unification",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "botbonnie",
+      "capability_id": "predictive_scoring",
+      "state": "claimed_only",
+      "basis": "claimed_strengths",
+      "note": "結合 AI 預測模型投放個人化內容",
+      "source_url": "https://www.appier.com/en/products/botbonnie",
+      "confidence": "claimed",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "botbonnie",
+      "capability_id": "audience_enrichment",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "botbonnie",
+      "capability_id": "audience_activation",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "botbonnie",
+      "capability_id": "agentic_autonomy",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "botbonnie",
+      "capability_id": "agentic_evidence",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "botbonnie",
+      "capability_id": "copilot",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "botbonnie",
+      "capability_id": "no_code",
+      "state": "full",
+      "basis": "evidence_reviews",
+      "note": "無碼拖拉建 bot，第三方評論明載視覺化介面好懂（verified）",
+      "source_url": "https://www.appier.com/en/products/botbonnie",
+      "confidence": "verified",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "botbonnie",
+      "capability_id": "pricing_transparency",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "botbonnie",
+      "capability_id": "fast_onboarding",
+      "state": "claimed_only",
+      "basis": "features",
+      "note": "互動行銷模組約 10 分鐘部署",
+      "source_url": "https://www.appier.com/en/products/botbonnie",
+      "confidence": "claimed",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "botbonnie",
+      "capability_id": "portfolio_integration",
+      "state": "partial",
+      "basis": "pain_points",
+      "note": "與 AIQUA 的資料交換被第三方評論指為不夠流暢（verified）",
+      "source_url": "https://www.appier.com/en/products/botbonnie",
+      "confidence": "verified",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "botbonnie",
+      "capability_id": "storefront",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "botbonnie",
+      "capability_id": "payments",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "botbonnie",
+      "capability_id": "fulfillment",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "botbonnie",
+      "capability_id": "inventory_sync",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "botbonnie",
+      "capability_id": "pos_integration",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "botbonnie",
+      "capability_id": "store_staff_tools",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "airis",
+      "capability_id": "bid_optimization",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "airis",
+      "capability_id": "cross_platform_ads",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "airis",
+      "capability_id": "retargeting",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "airis",
+      "capability_id": "creative_generation",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "airis",
+      "capability_id": "incrementality",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "airis",
+      "capability_id": "journey_orchestration",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "airis",
+      "capability_id": "recommendation",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "airis",
+      "capability_id": "conversational",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "airis",
+      "capability_id": "conversion_optimization",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "airis",
+      "capability_id": "experimentation",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "airis",
+      "capability_id": "identity_resolution",
+      "state": "claimed_only",
+      "basis": "features",
+      "note": "即時身分解析成 360° 客戶視圖",
+      "source_url": "https://www.appier.com/en/products/airis",
+      "confidence": "claimed",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "airis",
+      "capability_id": "cdp_unification",
+      "state": "claimed_only",
+      "basis": "features",
+      "note": "Data Loader 串接 CRM／資料庫／資料倉儲，第三方樣本不足",
+      "source_url": "https://www.appier.com/en/products/airis",
+      "confidence": "claimed",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "airis",
+      "capability_id": "predictive_scoring",
+      "state": "claimed_only",
+      "basis": "features",
+      "note": "AutoML 轉換分數與價格敏感度分數",
+      "source_url": "https://www.appier.com/en/products/airis",
+      "confidence": "claimed",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "airis",
+      "capability_id": "audience_enrichment",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "airis",
+      "capability_id": "audience_activation",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "airis",
+      "capability_id": "agentic_autonomy",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "airis",
+      "capability_id": "agentic_evidence",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "airis",
+      "capability_id": "copilot",
+      "state": "claimed_only",
+      "basis": "features",
+      "note": "Analytics Copilot",
+      "source_url": "https://www.appier.com/en/products/airis",
+      "confidence": "claimed",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "airis",
+      "capability_id": "no_code",
+      "state": "claimed_only",
+      "basis": "claimed_strengths",
+      "note": "行銷人自主權，不需排 IT 隊列",
+      "source_url": "https://www.appier.com/en/products/airis",
+      "confidence": "claimed",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "airis",
+      "capability_id": "pricing_transparency",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "airis",
+      "capability_id": "fast_onboarding",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "airis",
+      "capability_id": "portfolio_integration",
+      "state": "partial",
+      "basis": "evidence_reviews",
+      "note": "官方稱原生串接 AIQUA 與 BotBonnie，第三方評論指出互通仍待打磨（verified）",
+      "source_url": "https://www.appier.com/en/products/airis",
+      "confidence": "verified",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "airis",
+      "capability_id": "storefront",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "airis",
+      "capability_id": "payments",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "airis",
+      "capability_id": "fulfillment",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "airis",
+      "capability_id": "inventory_sync",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "airis",
+      "capability_id": "pos_integration",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "airis",
+      "capability_id": "store_staff_tools",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aixon",
+      "capability_id": "bid_optimization",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aixon",
+      "capability_id": "cross_platform_ads",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aixon",
+      "capability_id": "retargeting",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aixon",
+      "capability_id": "creative_generation",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aixon",
+      "capability_id": "incrementality",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aixon",
+      "capability_id": "journey_orchestration",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aixon",
+      "capability_id": "recommendation",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aixon",
+      "capability_id": "conversational",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aixon",
+      "capability_id": "conversion_optimization",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aixon",
+      "capability_id": "experimentation",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aixon",
+      "capability_id": "identity_resolution",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aixon",
+      "capability_id": "cdp_unification",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aixon",
+      "capability_id": "predictive_scoring",
+      "state": "claimed_only",
+      "basis": "features",
+      "note": "預測用戶親和度與興趣",
+      "source_url": "https://www.appier.com/en/products/aixon",
+      "confidence": "claimed",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aixon",
+      "capability_id": "audience_enrichment",
+      "state": "claimed_only",
+      "basis": "features",
+      "note": "AI 預測親和度與興趣做數據擴增",
+      "source_url": "https://www.appier.com/en/products/aixon",
+      "confidence": "claimed",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aixon",
+      "capability_id": "audience_activation",
+      "state": "claimed_only",
+      "basis": "features",
+      "note": "分眾匯出至數十個付費與自有渠道",
+      "source_url": "https://www.appier.com/en/products/aixon",
+      "confidence": "claimed",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aixon",
+      "capability_id": "agentic_autonomy",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aixon",
+      "capability_id": "agentic_evidence",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aixon",
+      "capability_id": "copilot",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aixon",
+      "capability_id": "no_code",
+      "state": "partial",
+      "basis": "evidence_reviews",
+      "note": "宣稱低碼設定，但第三方評論指出進階功能學習曲線陡峭（verified）",
+      "source_url": "https://www.appier.com/en/products/aixon",
+      "confidence": "verified",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aixon",
+      "capability_id": "pricing_transparency",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aixon",
+      "capability_id": "fast_onboarding",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aixon",
+      "capability_id": "portfolio_integration",
+      "state": "claimed_only",
+      "basis": "features",
+      "note": "與 AIXPERT 串接，僅官方說法",
+      "source_url": "https://www.appier.com/en/products/aixon",
+      "confidence": "claimed",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aixon",
+      "capability_id": "storefront",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aixon",
+      "capability_id": "payments",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aixon",
+      "capability_id": "fulfillment",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aixon",
+      "capability_id": "inventory_sync",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aixon",
+      "capability_id": "pos_integration",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "aixon",
+      "capability_id": "store_staff_tools",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_commerce_cloud",
+      "capability_id": "bid_optimization",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_commerce_cloud",
+      "capability_id": "cross_platform_ads",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_commerce_cloud",
+      "capability_id": "retargeting",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_commerce_cloud",
+      "capability_id": "creative_generation",
+      "state": "claimed_only",
+      "basis": "features",
+      "note": "AI jooii 生成商品文案",
+      "source_url": "https://91app.com/commerce-cloud/",
+      "confidence": "claimed",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_commerce_cloud",
+      "capability_id": "incrementality",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_commerce_cloud",
+      "capability_id": "journey_orchestration",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_commerce_cloud",
+      "capability_id": "recommendation",
+      "state": "claimed_only",
+      "basis": "features",
+      "note": "動態商品推薦提升個人化購物體驗",
+      "source_url": "https://91app.com/commerce-cloud/",
+      "confidence": "claimed",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_commerce_cloud",
+      "capability_id": "conversational",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_commerce_cloud",
+      "capability_id": "conversion_optimization",
+      "state": "claimed_only",
+      "basis": "features",
+      "note": "超過 400 種促銷活動組合",
+      "source_url": "https://91app.com/commerce-cloud/",
+      "confidence": "claimed",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_commerce_cloud",
+      "capability_id": "experimentation",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_commerce_cloud",
+      "capability_id": "identity_resolution",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_commerce_cloud",
+      "capability_id": "cdp_unification",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_commerce_cloud",
+      "capability_id": "predictive_scoring",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_commerce_cloud",
+      "capability_id": "audience_enrichment",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_commerce_cloud",
+      "capability_id": "audience_activation",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_commerce_cloud",
+      "capability_id": "agentic_autonomy",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_commerce_cloud",
+      "capability_id": "agentic_evidence",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_commerce_cloud",
+      "capability_id": "copilot",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_commerce_cloud",
+      "capability_id": "no_code",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_commerce_cloud",
+      "capability_id": "pricing_transparency",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_commerce_cloud",
+      "capability_id": "fast_onboarding",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_commerce_cloud",
+      "capability_id": "portfolio_integration",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_commerce_cloud",
+      "capability_id": "storefront",
+      "state": "claimed_only",
+      "basis": "features",
+      "note": "品牌官網與 App 線上店面，支援虛擬／實體商品與電子票券",
+      "source_url": "https://91app.com/commerce-cloud/",
+      "confidence": "claimed",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_commerce_cloud",
+      "capability_id": "payments",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_commerce_cloud",
+      "capability_id": "fulfillment",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_commerce_cloud",
+      "capability_id": "inventory_sync",
+      "state": "claimed_only",
+      "basis": "features",
+      "note": "管理全通路商品庫存與訂單，跨通路彈性分配",
+      "source_url": "https://91app.com/commerce-cloud/",
+      "confidence": "claimed",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_commerce_cloud",
+      "capability_id": "pos_integration",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_commerce_cloud",
+      "capability_id": "store_staff_tools",
+      "state": "claimed_only",
+      "basis": "features",
+      "note": "推薦人機制，認列店員全通路績效",
+      "source_url": "https://91app.com/commerce-cloud/",
+      "confidence": "claimed",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_marketing_cloud",
+      "capability_id": "bid_optimization",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_marketing_cloud",
+      "capability_id": "cross_platform_ads",
+      "state": "claimed_only",
+      "basis": "claimed_strengths",
+      "note": "RMN 全漏斗行銷，整合通路、媒體與數據夥伴",
+      "source_url": "https://www.91app.com.hk/marketing-cloud",
+      "confidence": "claimed",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_marketing_cloud",
+      "capability_id": "retargeting",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_marketing_cloud",
+      "capability_id": "creative_generation",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_marketing_cloud",
+      "capability_id": "incrementality",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_marketing_cloud",
+      "capability_id": "journey_orchestration",
+      "state": "claimed_only",
+      "basis": "claimed_strengths",
+      "note": "自動化取代重複性工作，跨私域與公域渠道",
+      "source_url": "https://www.91app.com.hk/marketing-cloud",
+      "confidence": "claimed",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_marketing_cloud",
+      "capability_id": "recommendation",
+      "state": "claimed_only",
+      "basis": "features",
+      "note": "AI 辨識顧客及推薦商品",
+      "source_url": "https://www.91app.com.hk/marketing-cloud",
+      "confidence": "claimed",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_marketing_cloud",
+      "capability_id": "conversational",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_marketing_cloud",
+      "capability_id": "conversion_optimization",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_marketing_cloud",
+      "capability_id": "experimentation",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_marketing_cloud",
+      "capability_id": "identity_resolution",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_marketing_cloud",
+      "capability_id": "cdp_unification",
+      "state": "claimed_only",
+      "basis": "features",
+      "note": "CDMP 多元數據整合，運用零售 AI 與 Data Clean Room",
+      "source_url": "https://www.91app.com.hk/marketing-cloud",
+      "confidence": "claimed",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_marketing_cloud",
+      "capability_id": "predictive_scoring",
+      "state": "claimed_only",
+      "basis": "features",
+      "note": "NAPL 與 DCIU 模型，依活躍度、購買意圖、商品偏好圈選",
+      "source_url": "https://www.91app.com.hk/marketing-cloud",
+      "confidence": "claimed",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_marketing_cloud",
+      "capability_id": "audience_enrichment",
+      "state": "claimed_only",
+      "basis": "features",
+      "note": "第一方與第三方數據結合掌握消費者輪廓",
+      "source_url": "https://www.91app.com.hk/marketing-cloud",
+      "confidence": "claimed",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_marketing_cloud",
+      "capability_id": "audience_activation",
+      "state": "claimed_only",
+      "basis": "features",
+      "note": "私域 APP Push／eDM／SMS／WhatsApp 與公域 Meta／Google",
+      "source_url": "https://www.91app.com.hk/marketing-cloud",
+      "confidence": "claimed",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_marketing_cloud",
+      "capability_id": "agentic_autonomy",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_marketing_cloud",
+      "capability_id": "agentic_evidence",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_marketing_cloud",
+      "capability_id": "copilot",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_marketing_cloud",
+      "capability_id": "no_code",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_marketing_cloud",
+      "capability_id": "pricing_transparency",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_marketing_cloud",
+      "capability_id": "fast_onboarding",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_marketing_cloud",
+      "capability_id": "portfolio_integration",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_marketing_cloud",
+      "capability_id": "storefront",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_marketing_cloud",
+      "capability_id": "payments",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_marketing_cloud",
+      "capability_id": "fulfillment",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_marketing_cloud",
+      "capability_id": "inventory_sync",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_marketing_cloud",
+      "capability_id": "pos_integration",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_marketing_cloud",
+      "capability_id": "store_staff_tools",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_agentone",
+      "capability_id": "bid_optimization",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_agentone",
+      "capability_id": "cross_platform_ads",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_agentone",
+      "capability_id": "retargeting",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_agentone",
+      "capability_id": "creative_generation",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_agentone",
+      "capability_id": "incrementality",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_agentone",
+      "capability_id": "journey_orchestration",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_agentone",
+      "capability_id": "recommendation",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_agentone",
+      "capability_id": "conversational",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_agentone",
+      "capability_id": "conversion_optimization",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_agentone",
+      "capability_id": "experimentation",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_agentone",
+      "capability_id": "identity_resolution",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_agentone",
+      "capability_id": "cdp_unification",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_agentone",
+      "capability_id": "predictive_scoring",
+      "state": "claimed_only",
+      "basis": "features",
+      "note": "精準識別高價值客群",
+      "source_url": "https://91app.com/blog/91app-202607-agentone/",
+      "confidence": "claimed",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_agentone",
+      "capability_id": "audience_enrichment",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_agentone",
+      "capability_id": "audience_activation",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_agentone",
+      "capability_id": "agentic_autonomy",
+      "state": "claimed_only",
+      "basis": "features",
+      "note": "Plugins／Skills／Workflows 擴充，跨任務編排多個 Agent",
+      "source_url": "https://91app.com/blog/91app-202607-agentone/",
+      "confidence": "claimed",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_agentone",
+      "capability_id": "agentic_evidence",
+      "state": "none",
+      "basis": "pain_points",
+      "note": "官方發表稿未揭露任何自家部署的量化成效，僅引用 McKinsey 市場調查",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_agentone",
+      "capability_id": "copilot",
+      "state": "claimed_only",
+      "basis": "features",
+      "note": "透過對話即時監控營運異常",
+      "source_url": "https://91app.com/blog/91app-202607-agentone/",
+      "confidence": "claimed",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_agentone",
+      "capability_id": "no_code",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_agentone",
+      "capability_id": "pricing_transparency",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_agentone",
+      "capability_id": "fast_onboarding",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_agentone",
+      "capability_id": "portfolio_integration",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_agentone",
+      "capability_id": "storefront",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_agentone",
+      "capability_id": "payments",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_agentone",
+      "capability_id": "fulfillment",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_agentone",
+      "capability_id": "inventory_sync",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_agentone",
+      "capability_id": "pos_integration",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_agentone",
+      "capability_id": "store_staff_tools",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_ims",
+      "capability_id": "bid_optimization",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_ims",
+      "capability_id": "cross_platform_ads",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_ims",
+      "capability_id": "retargeting",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_ims",
+      "capability_id": "creative_generation",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_ims",
+      "capability_id": "incrementality",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_ims",
+      "capability_id": "journey_orchestration",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_ims",
+      "capability_id": "recommendation",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_ims",
+      "capability_id": "conversational",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_ims",
+      "capability_id": "conversion_optimization",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_ims",
+      "capability_id": "experimentation",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_ims",
+      "capability_id": "identity_resolution",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_ims",
+      "capability_id": "cdp_unification",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_ims",
+      "capability_id": "predictive_scoring",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_ims",
+      "capability_id": "audience_enrichment",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_ims",
+      "capability_id": "audience_activation",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_ims",
+      "capability_id": "agentic_autonomy",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_ims",
+      "capability_id": "agentic_evidence",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_ims",
+      "capability_id": "copilot",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_ims",
+      "capability_id": "no_code",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_ims",
+      "capability_id": "pricing_transparency",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_ims",
+      "capability_id": "fast_onboarding",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_ims",
+      "capability_id": "portfolio_integration",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_ims",
+      "capability_id": "storefront",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_ims",
+      "capability_id": "payments",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_ims",
+      "capability_id": "fulfillment",
+      "state": "claimed_only",
+      "basis": "features",
+      "note": "店內接單、線上直送，門市缺貨時由倉庫出貨",
+      "source_url": "https://91app.com/blog/what-is-ims/",
+      "confidence": "claimed",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_ims",
+      "capability_id": "inventory_sync",
+      "state": "claimed_only",
+      "basis": "features",
+      "note": "自動均分或共享各通路可售庫存，與主流 B2C 平台深度整合",
+      "source_url": "https://91app.com/blog/what-is-ims/",
+      "confidence": "claimed",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_ims",
+      "capability_id": "pos_integration",
+      "state": "claimed_only",
+      "basis": "features",
+      "note": "串接 ERP、POS、CRM 等既有系統",
+      "source_url": "https://91app.com/blog/what-is-ims/",
+      "confidence": "claimed",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_ims",
+      "capability_id": "store_staff_tools",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_touch",
+      "capability_id": "bid_optimization",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_touch",
+      "capability_id": "cross_platform_ads",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_touch",
+      "capability_id": "retargeting",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_touch",
+      "capability_id": "creative_generation",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_touch",
+      "capability_id": "incrementality",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_touch",
+      "capability_id": "journey_orchestration",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_touch",
+      "capability_id": "recommendation",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_touch",
+      "capability_id": "conversational",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_touch",
+      "capability_id": "conversion_optimization",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_touch",
+      "capability_id": "experimentation",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_touch",
+      "capability_id": "identity_resolution",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_touch",
+      "capability_id": "cdp_unification",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_touch",
+      "capability_id": "predictive_scoring",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_touch",
+      "capability_id": "audience_enrichment",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_touch",
+      "capability_id": "audience_activation",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_touch",
+      "capability_id": "agentic_autonomy",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_touch",
+      "capability_id": "agentic_evidence",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_touch",
+      "capability_id": "copilot",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_touch",
+      "capability_id": "no_code",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_touch",
+      "capability_id": "pricing_transparency",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_touch",
+      "capability_id": "fast_onboarding",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_touch",
+      "capability_id": "portfolio_integration",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_touch",
+      "capability_id": "storefront",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_touch",
+      "capability_id": "payments",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_touch",
+      "capability_id": "fulfillment",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_touch",
+      "capability_id": "inventory_sync",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_touch",
+      "capability_id": "pos_integration",
+      "state": "claimed_only",
+      "basis": "features",
+      "note": "門市零售終端；官網僅列產品名稱與定位，未提供功能細節",
+      "source_url": "https://91app.com/solutions/",
+      "confidence": "claimed",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_touch",
+      "capability_id": "store_staff_tools",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_payments",
+      "capability_id": "bid_optimization",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_payments",
+      "capability_id": "cross_platform_ads",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_payments",
+      "capability_id": "retargeting",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_payments",
+      "capability_id": "creative_generation",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_payments",
+      "capability_id": "incrementality",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_payments",
+      "capability_id": "journey_orchestration",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_payments",
+      "capability_id": "recommendation",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_payments",
+      "capability_id": "conversational",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_payments",
+      "capability_id": "conversion_optimization",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_payments",
+      "capability_id": "experimentation",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_payments",
+      "capability_id": "identity_resolution",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_payments",
+      "capability_id": "cdp_unification",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_payments",
+      "capability_id": "predictive_scoring",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_payments",
+      "capability_id": "audience_enrichment",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_payments",
+      "capability_id": "audience_activation",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_payments",
+      "capability_id": "agentic_autonomy",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_payments",
+      "capability_id": "agentic_evidence",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_payments",
+      "capability_id": "copilot",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_payments",
+      "capability_id": "no_code",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_payments",
+      "capability_id": "pricing_transparency",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_payments",
+      "capability_id": "fast_onboarding",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_payments",
+      "capability_id": "portfolio_integration",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_payments",
+      "capability_id": "storefront",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_payments",
+      "capability_id": "payments",
+      "state": "claimed_only",
+      "basis": "features",
+      "note": "品牌自有渠道的支付收單；官網未說明支援的支付方式與費率",
+      "source_url": "https://91app.com/solutions/",
+      "confidence": "claimed",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_payments",
+      "capability_id": "fulfillment",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_payments",
+      "capability_id": "inventory_sync",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_payments",
+      "capability_id": "pos_integration",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_payments",
+      "capability_id": "store_staff_tools",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_staff_board",
+      "capability_id": "bid_optimization",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_staff_board",
+      "capability_id": "cross_platform_ads",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_staff_board",
+      "capability_id": "retargeting",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_staff_board",
+      "capability_id": "creative_generation",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_staff_board",
+      "capability_id": "incrementality",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_staff_board",
+      "capability_id": "journey_orchestration",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_staff_board",
+      "capability_id": "recommendation",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_staff_board",
+      "capability_id": "conversational",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_staff_board",
+      "capability_id": "conversion_optimization",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_staff_board",
+      "capability_id": "experimentation",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_staff_board",
+      "capability_id": "identity_resolution",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_staff_board",
+      "capability_id": "cdp_unification",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_staff_board",
+      "capability_id": "predictive_scoring",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_staff_board",
+      "capability_id": "audience_enrichment",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_staff_board",
+      "capability_id": "audience_activation",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_staff_board",
+      "capability_id": "agentic_autonomy",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_staff_board",
+      "capability_id": "agentic_evidence",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_staff_board",
+      "capability_id": "copilot",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_staff_board",
+      "capability_id": "no_code",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_staff_board",
+      "capability_id": "pricing_transparency",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_staff_board",
+      "capability_id": "fast_onboarding",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_staff_board",
+      "capability_id": "portfolio_integration",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_staff_board",
+      "capability_id": "storefront",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_staff_board",
+      "capability_id": "payments",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_staff_board",
+      "capability_id": "fulfillment",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_staff_board",
+      "capability_id": "inventory_sync",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_staff_board",
+      "capability_id": "pos_integration",
+      "state": "none",
+      "basis": null,
+      "note": "九個產品的公開描述中查不到相關功能",
+      "source_url": null,
+      "confidence": "none",
+      "captured_at": "2026-08-17"
+    },
+    {
+      "product_id": "91_staff_board",
+      "capability_id": "store_staff_tools",
+      "state": "claimed_only",
+      "basis": "features",
+      "note": "店員代客加購並發送專屬連結，線上下單後取得業績歸屬",
+      "source_url": "https://91app.com/blog/pos-omo-solution-ad/",
+      "confidence": "claimed",
+      "captured_at": "2026-08-17"
+    }
+  ]
+}

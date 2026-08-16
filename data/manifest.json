@@ -1,10 +1,17 @@
 {
   "schema_version": "0.1.0",
   "note": "快照索引。data/<YYYY-MM-DD>/ 每個目錄是一份完整快照，四份檔案齊備。歷史快照一律不可變——發現舊資料有誤只能在當期修正，改動歷史會讓版本 diff 憑空少掉一筆變化。",
-  "latest": "2026-08-14",
-  "previous": "2026-08-07",
+  "latest": "2026-08-17",
+  "previous": "2026-08-14",
   "snapshot_cadence": "未定（每月一版 vs 事件驅動，見 prepare.md 待討論事項 2）",
   "snapshots": [
+    {
+      "date": "2026-08-17",
+      "trigger": "新增能力矩陣格子值",
+      "vendors": ["appier", "91app"],
+      "changes": "新增 matrix.json：9 產品 × 22 能力 = 198 格。vendors／products／agents／capabilities 與前版相同。矩陣為 AI 依既有欄位整理的草稿，reviewed 為 false",
+      "files": ["vendors.json", "products.json", "agents.json", "capabilities.json", "matrix.json"]
+    },
     {
       "date": "2026-08-14",
       "trigger": "新增對照廠商",

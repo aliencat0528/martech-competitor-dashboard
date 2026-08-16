@@ -5,6 +5,31 @@
 ## [Unreleased]
 
 ### Added
+- **Zone C 能力矩陣與 Zone D 定位圖上線——規格指定的三張圖到齊**
+  - `data/2026-08-17/matrix.json` — 16 產品 × 28 能力 = **448 格**，
+    四態判定直接套 `capabilities.json` 的 `cell_states` 定義，每格帶 `basis`（判斷取自哪個欄位）。
+    **`reviewed: false`**，依資料層硬規則 6 待人工覆核
+  - `src/zones/ZoneC.tsx` — 四態矩陣，顏色與符號各標一次；「怎麼讀」直接引用
+    `cell_states[].definition` 原文；依產品線篩選，篩選後 summary 重算
+  - `src/charts/PositioningScatter.tsx`＋`src/zones/ZoneD.tsx` — 手寫 SVG 散佈圖，
+    四象限、圓點大小映射策略權重、**標籤自動避讓**（16 個標籤零重疊）
+  - `src/analysis/capabilityMetrics.ts` — 覆蓋率、四態統計、最密集的僅宣稱群，含 13 個測試
+- **91APP 七個產品入庫，能力字典擴充零售側 6 項**（← `prepare.md` MC-015，反轉 MC-011）
+  - `commerce` 群：開店平台／金流／物流出貨／全通路庫存／門市 POS／門市人員工具，22 → 28 項
+  - **91APP 的 22 個有能力的格子全部是 `claimed_only`，零格 `full` 或 `partial`**——
+    無 G2 規模的評論樣本。這是查不到第三方證據，不是產品沒有評價
+- **廠商下拉選單**（`src/zones/VendorPicker.tsx`）：切「兩家比較」或單一廠商，
+  Zone C／D／E 一起縮放，圖說 summary 跟著重算
+- **Zone D 權重滑桿**（← MC-010「權重公開且可調」的落地）：控制「僅宣稱」的採計權重 0–100%。
+  拉到 0% 時 91APP 七個產品的覆蓋率全部歸零
+
+### Fixed
+- `filterCells` 在沒有產品線篩選時直接回傳全集，導致切換廠商後 Zone C 的 summary
+  仍在數全部 448 格——描述講的不是眼前看到的東西。改為 `cellsForProducts`，一律依產品清單過濾
+- 定位圖底部標籤重疊到無法閱讀（16 個產品有 10 個落在計價透明度 0）；
+  加入依名稱寬度估算的標籤避讓，實測重疊數 3 → 0
+- 圖說字串裡的 Markdown 星號被當字面輸出（`**兩者期間不同**`）——那些字串同時要餵給
+  Markdown 匯出，改為不依賴標記的寫法
 - **廠商層對照的兩張圖**（← `prepare.md` MC-014）：加入 91APP 之後，它一度只有一張卡、
   不出現在任何圖裡。補上兩張兩家都畫得進去的圖：
   - `src/charts/GrowthCompare.tsx` — 營收年增率並排長條，**期間不同時每根長條下方各標自己的期間**

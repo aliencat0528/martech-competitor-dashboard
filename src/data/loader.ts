@@ -6,7 +6,15 @@
  */
 
 import manifestJson from '../../data/manifest.json';
-import type { Capability, Manifest, Product, Snapshot, Vendor } from '../types/data';
+import type {
+  Capability,
+  CellStateDef,
+  Manifest,
+  Matrix,
+  Product,
+  Snapshot,
+  Vendor,
+} from '../types/data';
 
 const manifest = manifestJson as Manifest;
 
@@ -21,7 +29,7 @@ function parsePath(path: string): { date: string; file: string } | null {
   return { date: match[1], file: match[2] };
 }
 
-function readFile(date: string, file: string): JsonModule {
+function findFile(date: string, file: string): JsonModule | null {
   for (const [path, mod] of Object.entries(snapshotFiles)) {
     const parsed = parsePath(path);
     if (parsed && parsed.date === date && parsed.file === file) {
@@ -29,7 +37,13 @@ function readFile(date: string, file: string): JsonModule {
       return ((mod as { default?: JsonModule }).default ?? mod) as JsonModule;
     }
   }
-  throw new Error(`快照缺檔：data/${date}/${file}.json`);
+  return null;
+}
+
+function readFile(date: string, file: string): JsonModule {
+  const found = findFile(date, file);
+  if (!found) throw new Error(`快照缺檔：data/${date}/${file}.json`);
+  return found;
 }
 
 export function listSnapshotDates(): string[] {
@@ -41,12 +55,18 @@ export function getManifest(): Manifest {
 }
 
 export function loadSnapshot(date: string): Snapshot {
+  const capabilitiesFile = readFile(date, 'capabilities');
+  // 較早的快照沒有 matrix.json——這是合法狀態，不是缺檔錯誤
+  const matrixFile = findFile(date, 'matrix');
+
   return {
     date,
     vendors: readFile(date, 'vendors').vendors as Vendor[],
     products: readFile(date, 'products').products as Product[],
-    capabilities: readFile(date, 'capabilities').capabilities as Capability[],
+    capabilities: capabilitiesFile.capabilities as Capability[],
+    cellStates: capabilitiesFile.cell_states as CellStateDef[],
     agents: readFile(date, 'agents').agents as unknown[],
+    matrix: matrixFile ? (matrixFile as unknown as Matrix) : null,
   };
 }
 
