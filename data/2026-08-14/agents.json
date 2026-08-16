@@ -1,6 +1,8 @@
 {
   "schema_version": "0.1.0",
   "captured_at": "2026-08-07",
+  "source_url": "https://www.prnewswire.com/news-releases/appier-announces-full-product-line-infused-with-agentic-ai-ushering-in-a-new-era-of-roi-driven-marketing-solutions-302563962.html",
+  "source_note": "本檔全部 Agent 均出自下方 announcement 的同一篇官方新聞稿；個別 Agent 依資料層硬規則 1「就近繼承」取用本欄，不逐筆重貼（← MC-013）。pain_points 為公開資訊推論（confidence: inferred），其來源同指該篇新聞稿，即推論所依據的那份公開資訊。",
   "note": "Agent 是能力層，不是獨立售賣單位。八個 Agent 於 2025-09 隨全產品線 Agentic AI 一併發表，官方新聞稿未提供任何量化成效數據——此事實本身即為落差分指標的輸入。",
   "announcement": {
     "date": "2025-09-23",
@@ -19,7 +21,10 @@
       "replaces_role": "互動素材工程師",
       "confidence": "claimed",
       "pain_points": [
-        { "text": "playable 品質高度依賴素材源，複雜或無視覺賣點的產品難以遊戲化", "confidence": "inferred" }
+        {
+          "text": "playable 品質高度依賴素材源，複雜或無視覺賣點的產品難以遊戲化",
+          "confidence": "inferred"
+        }
       ]
     },
     {
@@ -31,7 +36,10 @@
       "replaces_role": "美術／影片剪輯",
       "confidence": "claimed",
       "pain_points": [
-        { "text": "品牌合規的判定標準未公開，違規素材的法遵責任歸屬不明", "confidence": "inferred" }
+        {
+          "text": "品牌合規的判定標準未公開，違規素材的法遵責任歸屬不明",
+          "confidence": "inferred"
+        }
       ]
     },
     {
@@ -43,7 +51,10 @@
       "replaces_role": "行銷數據分析師",
       "confidence": "claimed",
       "pain_points": [
-        { "text": "MMM 需要長期跨渠道資料，中小型客戶樣本量不足以支撐可信結論", "confidence": "inferred" }
+        {
+          "text": "MMM 需要長期跨渠道資料，中小型客戶樣本量不足以支撐可信結論",
+          "confidence": "inferred"
+        }
       ]
     },
     {
@@ -55,7 +66,10 @@
       "replaces_role": "行銷企劃／操盤手",
       "confidence": "claimed",
       "pain_points": [
-        { "text": "與 AIQUA 既有的 Autopilot 功能疊床架屋，客戶難以分辨兩者差異", "confidence": "inferred" }
+        {
+          "text": "與 AIQUA 既有的 Autopilot 功能疊床架屋，客戶難以分辨兩者差異",
+          "confidence": "inferred"
+        }
       ]
     },
     {
@@ -67,7 +81,10 @@
       "replaces_role": "線上客服／銷售",
       "confidence": "claimed",
       "pain_points": [
-        { "text": "對話式推銷的體驗紅線（何時算騷擾）未有公開規範", "confidence": "inferred" }
+        {
+          "text": "對話式推銷的體驗紅線（何時算騷擾）未有公開規範",
+          "confidence": "inferred"
+        }
       ]
     },
     {
@@ -79,7 +96,10 @@
       "replaces_role": "客服人員",
       "confidence": "claimed",
       "pain_points": [
-        { "text": "知識庫品質決定一切；模型幻覺造成錯誤答覆的責任歸屬未明", "confidence": "inferred" }
+        {
+          "text": "知識庫品質決定一切；模型幻覺造成錯誤答覆的責任歸屬未明",
+          "confidence": "inferred"
+        }
       ]
     },
     {
@@ -91,7 +111,10 @@
       "replaces_role": "受眾策略／數據分析",
       "confidence": "claimed",
       "pain_points": [
-        { "text": "與 AIXON 既有的分眾與擴增功能重疊", "confidence": "inferred" }
+        {
+          "text": "與 AIXON 既有的分眾與擴增功能重疊",
+          "confidence": "inferred"
+        }
       ]
     },
     {
@@ -103,7 +126,10 @@
       "replaces_role": "資料科學家／BI",
       "confidence": "claimed",
       "pain_points": [
-        { "text": "「找出成長瓶頸」的結論需人工覆核，否則只是好看的圖表", "confidence": "inferred" }
+        {
+          "text": "「找出成長瓶頸」的結論需人工覆核，否則只是好看的圖表",
+          "confidence": "inferred"
+        }
       ]
     }
   ]

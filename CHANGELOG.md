@@ -9,6 +9,10 @@
   內容取自 v0.1.0 commit，逐位元組相同）與 `data/2026-08-14/`（當期），
   加 `data/manifest.json` 標明 `latest` / `previous` 與各快照的觸發原因
 - 子專案 `CLAUDE.md` 資料層硬規則新增第 7 條「歷史快照不可變」
+- 子專案 `CLAUDE.md` 資料層硬規則 1 新增**就近繼承**條款（← MC-013）：項目未自帶
+  `source_url` / `captured_at` 時沿祖層取值；並明訂契約檢查只對 `latest` 快照 fail
+- `data/2026-08-14/agents.json` — 補檔案層 `source_url` 與 `source_note`，
+  值取自該檔既有的 `announcement.source_url`（非新查證）。**當期快照契約違規歸零**
 - `data/2026-08-14/vendors.json` — **91APP 廠商層入庫**（← `prepare.md` MC-011）：7 個產品線名稱、
   FY2026 Q1 財報、AgentOne 發表日期。產品未進 `products.json`、能力未進矩陣
 - `prepare.md` MC-009／MC-010／MC-011 — 指標方向、圖表比較單位、91APP 收錄層級的決策記錄
