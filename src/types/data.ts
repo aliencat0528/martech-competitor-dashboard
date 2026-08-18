@@ -119,12 +119,39 @@ export interface Capability {
 /** 格子四態。`claimed_only` 是信度標記，不是指控（← MC-009） */
 export type CellState = 'full' | 'partial' | 'claimed_only' | 'none';
 
+export interface CellStateDef {
+  id: CellState;
+  label: string;
+  /** 判定標準的白話說明。Zone C 圖說與 Zone F 方法論頁共用這段原文 */
+  definition: string;
+}
+
+export interface MatrixCell extends Meta {
+  product_id: string;
+  capability_id: string;
+  state: CellState;
+  /** 判斷取自產品的哪個欄位。留 `null` 代表查不到任何相關描述 */
+  basis: string | null;
+}
+
+export interface Matrix {
+  schema_version: string;
+  captured_at: string;
+  /** AI 整理的草稿在人工覆核前為 `false`（← CLAUDE.md 資料層硬規則 6） */
+  reviewed: boolean;
+  reviewed_by: string | null;
+  cells: MatrixCell[];
+}
+
 export interface Snapshot {
   date: string;
   vendors: Vendor[];
   products: Product[];
   capabilities: Capability[];
+  cellStates: CellStateDef[];
   agents: unknown[];
+  /** 較早的快照沒有矩陣，呼叫端必須處理 `null` */
+  matrix: Matrix | null;
 }
 
 export interface SnapshotIndexEntry {

@@ -42,13 +42,18 @@ export const HOW_TO_READ: Record<string, HowToRead> = {
       '這張圖比的不是產品好壞，是誰願意讓你查得到——對一份強調來源的報告來說，' +
       '留白的分布本身就是情報。',
   },
-  productScatter: {
-    id: 'caption-product-scatter',
+  positioning: {
+    id: 'caption-positioning',
     title: '怎麼讀',
     body:
-      '橫軸是計價透明度（愈右愈透明），縱軸是第一方資料依賴度（愈上代表愈需要品牌自己的數據才跑得動）。' +
-      '右下角是「好買又好上手」，左上角是「要簽約談價、還要先把數據接進來」。' +
-      '圓點大小映射該產品在產品線中的策略權重。',
+      '橫軸是能力覆蓋率——能力字典中這個產品涵蓋幾項（含僅宣稱的），愈右面向愈廣。' +
+      '縱軸是計價透明度，愈上代表買方在簽約前愈算得出要付多少。' +
+      '分隔線畫在兩軸的中點，切出四個象限：右上「廣而好買」、右下「廣且要談價」、' +
+      '左上「窄而好買」、左下「窄且要談價」。' +
+      '圓點大小映射該產品在產品線中的策略權重，愈大代表對廠商愈重要。' +
+      '橫軸受上方滑桿影響：把「僅宣稱」的採計權重拉低，只靠官方說法撐起來的產品會往左縮。' +
+      '覆蓋率把「僅宣稱」也算進去，所以它衡量的是面向廣度而不是實力——' +
+      '有多少項拿得出第三方證據，要看能力矩陣。',
   },
 };
 
@@ -98,14 +103,20 @@ export function availabilitySummary(input: {
   return `${input.metricCount} 個對照欄位中，查得到的分別是 ${parts.join('、')}。${missing}`;
 }
 
-export function productScatterSummary(input: {
+export function positioningSummary(input: {
   productCount: number;
-  highDependencyCount: number;
-  mostTransparent: string;
+  widestName: string;
+  widestPct: number;
+  narrowestName: string;
+  narrowestPct: number;
+  buyableCount: number;
+  claimWeightPct: number;
 }): string {
   return (
-    `目前收錄 ${input.productCount} 個產品，其中 ${input.highDependencyCount} 個的第一方資料依賴度為 4 以上——` +
-    `這些產品要先接得到品牌自己的數據才發揮得出來。計價最透明者為 ${input.mostTransparent}。`
+    `在「僅宣稱」採計 ${input.claimWeightPct}% 的設定下，圖上 ${input.productCount} 個產品：` +
+    `覆蓋最廣的是 ${input.widestName}（${input.widestPct}%），` +
+    `最窄的是 ${input.narrowestName}（${input.narrowestPct}%）。` +
+    `計價透明度達 0.5 以上的有 ${input.buyableCount} 個，其餘都要談價才知道價格。`
   );
 }
 
@@ -114,5 +125,6 @@ export function productScatterSummary(input: {
  * M1 只有 Appier 一家有產品層資料，91APP 僅收到廠商層。
  */
 export const COVERAGE_CAVEAT =
-  '目前產品層僅收錄 Appier 一家；91APP 只收到廠商層（財報與產品線名稱），' +
-  '其核心能力不在現有能力字典內，尚無法與 Appier 併表比較。對照組於 M2 加入。';
+  '兩家的產品層都已入庫，能力字典已擴充零售側 6 項（← MC-015）。' +
+  '91APP 無 G2 規模的評論樣本，其 22 個有能力的格子全部是「僅宣稱」——' +
+  '這代表查不到第三方證據，不代表產品沒有評價。四群對照組仍於 M2 加入。';

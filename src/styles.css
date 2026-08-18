@@ -400,6 +400,166 @@ table.matrix .cell {
   font-size: 11px;
 }
 
+/* ---------- 能力矩陣 ---------- */
+
+.filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.filter-label {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  margin-right: 4px;
+}
+
+.filter-chip {
+  font: inherit;
+  font-size: 13px;
+  padding: 4px 12px;
+  background: var(--surface);
+  border: 1px solid var(--rule-strong);
+  color: var(--ink-2);
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.filter-chip:hover {
+  border-color: var(--accent);
+  color: var(--ink);
+}
+
+.filter-chip.is-on {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--surface);
+}
+
+table.capability-matrix {
+  min-width: 640px;
+}
+
+table.capability-matrix th[scope='row'] {
+  text-align: left;
+  font-weight: 500;
+  font-size: 13px;
+  padding: 7px 14px;
+  border-bottom: 1px solid var(--rule);
+  white-space: nowrap;
+  cursor: help;
+}
+
+.cap-group {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  letter-spacing: 0.06em;
+  color: var(--ink-3);
+  width: 82px;
+}
+
+th.matrix-col {
+  text-align: center;
+}
+
+td.mcell {
+  text-align: center;
+  padding: 7px 6px;
+  font-size: 16px;
+  border-bottom: 1px solid var(--rule);
+}
+
+td.mcell abbr {
+  text-decoration: none;
+  cursor: help;
+}
+
+.mcell-inline {
+  display: inline-block;
+  width: 20px;
+  font-size: 15px;
+}
+
+.mcell-full,
+.mcell-inline.mcell-full {
+  color: var(--good);
+}
+.mcell-partial,
+.mcell-inline.mcell-partial {
+  color: var(--accent);
+}
+.mcell-claimed_only,
+.mcell-inline.mcell-claimed_only {
+  color: var(--signal);
+}
+.mcell-none,
+.mcell-inline.mcell-none {
+  color: var(--rule-strong);
+}
+
+td.mcell-full {
+  background: var(--good-soft);
+}
+td.mcell-partial {
+  background: var(--accent-soft);
+}
+td.mcell-claimed_only {
+  background: var(--signal-soft);
+}
+
+ul.state-legend {
+  list-style: none;
+  margin: 6px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+}
+
+ul.state-legend li {
+  display: grid;
+  grid-template-columns: 20px 58px 1fr;
+  gap: 8px;
+  align-items: baseline;
+}
+
+.state-def {
+  color: var(--ink-2);
+  font-size: 12.5px;
+}
+
+/* ---------- 定位圖 ---------- */
+
+.dot {
+  fill: var(--accent);
+  fill-opacity: 0.78;
+  stroke: var(--surface);
+  stroke-width: 2;
+}
+
+.dot-label {
+  fill: var(--ink-2);
+  font-size: 11px;
+}
+
+.quadrant {
+  fill: var(--ink-3);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.06em;
+}
+
+.axis-title {
+  fill: var(--ink-3);
+  font-size: 11px;
+}
+
 /* ---------- 表格 ---------- */
 
 .product-list {
@@ -483,4 +643,76 @@ tbody td {
   .zone {
     break-inside: avoid;
   }
+}
+
+/* ---------- 廠商下拉選單與權重滑桿 ---------- */
+
+.vendor-picker {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 14px;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--accent);
+  padding: 14px 18px;
+}
+
+.vendor-picker label {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+
+.vendor-picker select {
+  font: inherit;
+  font-size: 14px;
+  padding: 6px 10px;
+  background: var(--paper);
+  color: var(--ink);
+  border: 1px solid var(--rule-strong);
+  border-radius: 2px;
+}
+
+.picker-hint {
+  font-size: 13px;
+  color: var(--ink-2);
+}
+
+.weight-control {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.weight-control label {
+  font-size: 14px;
+  color: var(--ink-2);
+}
+
+.weight-control input[type='range'] {
+  width: 100%;
+  max-width: 420px;
+  accent-color: var(--accent);
+}
+
+.weight-ends {
+  display: flex;
+  justify-content: space-between;
+  max-width: 420px;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  color: var(--ink-3);
+}
+
+.weight-note {
+  margin: 4px 0 0;
+  font-size: 13px;
+  color: var(--ink-2);
+  max-width: 68ch;
 }

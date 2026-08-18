@@ -1,0 +1,223 @@
+{
+  "schema_version": "0.1.0",
+  "captured_at": "2026-08-17",
+  "note": "能力矩陣的欄位定義。definition 是判定標準的白話說明，Zone F 方法論頁直接引用此欄位原文。格子四態：full / partial / claimed_only / none。 2026-08-17 擴充零售側 commerce 群 6 項（← MC-015），使 91APP 的產品線進得了同一張矩陣。",
+  "cell_states": [
+    {
+      "id": "full",
+      "label": "有",
+      "definition": "功能存在，且有第三方來源（評論站、獨立報導、實測）可佐證"
+    },
+    {
+      "id": "partial",
+      "label": "部分",
+      "definition": "功能存在但有明確限制（僅特定渠道、僅特定方案、需搭配其他產品）"
+    },
+    {
+      "id": "claimed_only",
+      "label": "僅宣稱",
+      "definition": "廠商官網或新聞稿聲稱具備，但找不到任何第三方證據。本專案特有的一態"
+    },
+    {
+      "id": "none",
+      "label": "無",
+      "definition": "查不到任何相關描述。注意：這代表「查不到」而非「確定沒有」"
+    }
+  ],
+  "groups": [
+    {
+      "id": "acquisition",
+      "label": "獲客與投放"
+    },
+    {
+      "id": "engagement",
+      "label": "互動與轉換"
+    },
+    {
+      "id": "data",
+      "label": "資料與智慧"
+    },
+    {
+      "id": "agentic",
+      "label": "Agentic 自動化"
+    },
+    {
+      "id": "ops",
+      "label": "導入與營運"
+    },
+    {
+      "id": "commerce",
+      "label": "零售與交易"
+    }
+  ],
+  "capabilities": [
+    {
+      "id": "bid_optimization",
+      "group": "acquisition",
+      "label": "出價優化",
+      "definition": "以模型即時調整廣告出價，而非固定出價或人工排程"
+    },
+    {
+      "id": "cross_platform_ads",
+      "group": "acquisition",
+      "label": "跨平台廣告管理",
+      "definition": "單一介面管理三個以上外部廣告平台，且能直接下動作而非僅檢視報表"
+    },
+    {
+      "id": "retargeting",
+      "group": "acquisition",
+      "label": "再行銷",
+      "definition": "針對已互動但未轉換的使用者重新投放"
+    },
+    {
+      "id": "creative_generation",
+      "group": "acquisition",
+      "label": "素材生成",
+      "definition": "以生成式模型產出可直接投放的圖像、影片或互動素材"
+    },
+    {
+      "id": "incrementality",
+      "group": "acquisition",
+      "label": "增量測試／MMM",
+      "definition": "以實驗或模型分離廣告的因果貢獻，而非僅做最後點擊歸因"
+    },
+    {
+      "id": "journey_orchestration",
+      "group": "engagement",
+      "label": "旅程編排",
+      "definition": "以視覺化流程串接跨渠道訊息，含條件分支與等待節點"
+    },
+    {
+      "id": "recommendation",
+      "group": "engagement",
+      "label": "商品／內容推薦",
+      "definition": "依個別使用者行為產生推薦，而非熱門排行或人工規則"
+    },
+    {
+      "id": "conversational",
+      "group": "engagement",
+      "label": "對話式行銷",
+      "definition": "支援兩個以上通訊平台的自動化對話流，且可從對話收集資料"
+    },
+    {
+      "id": "conversion_optimization",
+      "group": "engagement",
+      "label": "轉換優化",
+      "definition": "在站上即時判斷並介入以促成轉換（發券、彈窗、時機控制）"
+    },
+    {
+      "id": "experimentation",
+      "group": "engagement",
+      "label": "實驗與 A/B",
+      "definition": "內建 A/B 或多變量測試，且能將結果回饋給模型"
+    },
+    {
+      "id": "identity_resolution",
+      "group": "data",
+      "label": "身分解析",
+      "definition": "跨裝置與跨渠道把多個識別碼合併成單一客戶"
+    },
+    {
+      "id": "cdp_unification",
+      "group": "data",
+      "label": "資料統一（CDP）",
+      "definition": "可串接外部 CRM／資料倉儲並持續同步，非一次性匯入"
+    },
+    {
+      "id": "predictive_scoring",
+      "group": "data",
+      "label": "預測分數",
+      "definition": "產出可直接用於分眾的預測值（轉換傾向、流失風險、價格敏感度等）"
+    },
+    {
+      "id": "audience_enrichment",
+      "group": "data",
+      "label": "受眾擴增",
+      "definition": "以模型推論使用者未直接提供的興趣或屬性"
+    },
+    {
+      "id": "audience_activation",
+      "group": "data",
+      "label": "分眾激活",
+      "definition": "分眾可一鍵輸出至外部付費與自有渠道"
+    },
+    {
+      "id": "agentic_autonomy",
+      "group": "agentic",
+      "label": "自主代理",
+      "definition": "系統可在無人介入下連續執行多步驟決策，且有明確的自我學習迴圈描述"
+    },
+    {
+      "id": "agentic_evidence",
+      "group": "agentic",
+      "label": "Agentic 成效證據",
+      "definition": "對其 Agentic 能力提供可查證的量化成效，而非僅有客戶語錄"
+    },
+    {
+      "id": "copilot",
+      "group": "agentic",
+      "label": "Copilot 助手",
+      "definition": "以自然語言互動協助分析或產出內容的輔助介面"
+    },
+    {
+      "id": "no_code",
+      "group": "ops",
+      "label": "無碼操作",
+      "definition": "主要工作流程可由非工程人員獨立完成"
+    },
+    {
+      "id": "pricing_transparency",
+      "group": "ops",
+      "label": "定價透明",
+      "definition": "官網公開可自助購買的價格級距，而非一律「聯絡我們」"
+    },
+    {
+      "id": "fast_onboarding",
+      "group": "ops",
+      "label": "快速導入",
+      "definition": "官方宣稱或第三方驗證可在兩週內上線"
+    },
+    {
+      "id": "portfolio_integration",
+      "group": "ops",
+      "label": "自家產品互通",
+      "definition": "同廠商產品之間的資料交換有第三方證據支持流暢，非僅官方宣稱"
+    },
+    {
+      "id": "storefront",
+      "label": "開店平台",
+      "group": "commerce",
+      "definition": "提供品牌自有官網與 App 的線上店面，含商品上架、購物車與結帳"
+    },
+    {
+      "id": "payments",
+      "label": "金流",
+      "group": "commerce",
+      "definition": "提供或整合支付收單，買方不需自行接第三方金流"
+    },
+    {
+      "id": "fulfillment",
+      "label": "物流出貨",
+      "group": "commerce",
+      "definition": "串接倉儲與配送流程，支援門市取貨或倉庫直送"
+    },
+    {
+      "id": "inventory_sync",
+      "label": "全通路庫存",
+      "group": "commerce",
+      "definition": "跨線上線下與外部電商平台即時同步可售庫存，非批次匯入"
+    },
+    {
+      "id": "pos_integration",
+      "label": "門市 POS",
+      "group": "commerce",
+      "definition": "提供或深度串接門市收銀系統，使交易與會員資料回流至同一份客戶檔"
+    },
+    {
+      "id": "store_staff_tools",
+      "label": "門市人員工具",
+      "group": "commerce",
+      "definition": "提供店員端操作工具，含跨渠道業績歸屬與顧客資料查詢"
+    }
+  ]
+}

@@ -1,0 +1,298 @@
+{
+  "schema_version": "0.1.0",
+  "captured_at": "2026-08-14",
+  "note": "91APP 依 A 案僅收廠商層，產品未進 products.json、能力未進 capabilities 矩陣——其核心能力（開店、金流、物流、庫存、POS）不在現有 22 項能力字典內，強行入矩陣會兩邊各空一半（← prepare.md MC-005 棄選）。",
+  "vendors": [
+    {
+      "id": "appier",
+      "name": "Appier",
+      "name_zh": "沛星互動科技",
+      "ticker": "4180.T",
+      "hq": "Taiwan",
+      "founded": 2012,
+      "positioning": "AI-native MarTech，橫跨廣告投放、自有渠道互動、第一方資料三個市場",
+      "vision_statement": {
+        "text": "One Data. One Experience. One Agentic World.",
+        "source_url": "https://www.prnewswire.com/news-releases/appier-announces-full-product-line-infused-with-agentic-ai-ushering-in-a-new-era-of-roi-driven-marketing-solutions-302563962.html",
+        "confidence": "claimed",
+        "captured_at": "2026-08-07"
+      },
+      "product_lines": [
+        { "id": "advertising_cloud", "label": "Advertising Cloud", "label_zh": "廣告雲" },
+        { "id": "personalization_cloud", "label": "Personalization Cloud", "label_zh": "個人化雲" },
+        { "id": "data_cloud", "label": "Data Cloud", "label_zh": "資料雲" }
+      ],
+      "metrics": {
+        "revenue": {
+          "value": 12100000000,
+          "currency": "JPY",
+          "period": "FY2026 Q1",
+          "yoy": 0.294,
+          "source_url": "https://www.inside.com.tw/article/41288-appier-q1-2026-revenue-record-agentic-ai-margin-expansion",
+          "confidence": "verified",
+          "captured_at": "2026-08-07"
+        },
+        "gross_profit": {
+          "value": 6500000000,
+          "currency": "JPY",
+          "period": "FY2026 Q1",
+          "yoy": 0.359,
+          "source_url": "https://www.appier.com/en/press-media/fy26q1earnings",
+          "confidence": "verified",
+          "captured_at": "2026-08-07"
+        },
+        "gross_margin": {
+          "value": 0.539,
+          "prior_value": 0.514,
+          "period": "FY2026 Q1",
+          "source_url": "https://www.appier.com/en/press-media/fy26q1earnings",
+          "confidence": "verified",
+          "captured_at": "2026-08-07"
+        },
+        "operating_profit": {
+          "value": 185000000,
+          "currency": "JPY",
+          "period": "FY2026 Q1",
+          "margin": 0.015,
+          "yoy": 1.53,
+          "source_url": "https://www.appier.com/en/press-media/fy26q1earnings",
+          "confidence": "verified",
+          "captured_at": "2026-08-07"
+        },
+        "customers": {
+          "value": 1800,
+          "qualifier": "1,800+ 全球客戶",
+          "yoy_growth": 0.13,
+          "source_url": "https://www.appier.com/en/about",
+          "confidence": "claimed",
+          "captured_at": "2026-08-07"
+        },
+        "offices": {
+          "value": 17,
+          "source_url": "https://www.appier.com/en/about",
+          "confidence": "claimed",
+          "captured_at": "2026-08-07"
+        },
+        "g2_rating": {
+          "value": 4.5,
+          "reviews_count": 241,
+          "scope": "全產品加總，Appier 未分產品揭露",
+          "source_url": "https://www.g2.com/sellers/appier",
+          "confidence": "verified",
+          "captured_at": "2026-08-07"
+        },
+        "employees": {
+          "value": null,
+          "source_url": null,
+          "confidence": "none",
+          "captured_at": "2026-08-07"
+        }
+      },
+      "growth_drivers": [
+        {
+          "text": "電商垂直年增逾 35%",
+          "source_url": "https://www.inside.com.tw/article/41288-appier-q1-2026-revenue-record-agentic-ai-margin-expansion",
+          "confidence": "verified",
+          "captured_at": "2026-08-07"
+        },
+        {
+          "text": "其他網路服務（線上旅遊帶動）年增逾 40%",
+          "source_url": "https://finance.technews.tw/2026/02/13/appier-q4-2025-earnings",
+          "confidence": "verified",
+          "captured_at": "2026-08-07"
+        }
+      ],
+      "acquisitions": [
+        {
+          "target": "BotBonnie",
+          "year": 2021,
+          "amount": null,
+          "rationale": "補齊全渠道對話式行銷",
+          "source_url": "https://www.appier.com/en/press-media/appier-adds-omnichannel-chatbot-platform-botbonnie-to-its-ai-powered-solutions-to-boost-conversational-marketing",
+          "confidence": "verified",
+          "captured_at": "2026-08-07"
+        },
+        {
+          "target": "AdCreative.ai",
+          "year": 2025,
+          "amount": 38700000,
+          "currency": "USD",
+          "closed_at": "2025-03-19",
+          "rationale": "生成式 AI 廣告素材，並拓展歐洲市場；為 Appier IPO 後最大一筆併購",
+          "source_url": "https://www.prnewswire.com/news-releases/appier-acquires-adcreativeai-in-strategic-move-to-lead-generative-ai-powered-advertising-and-marketing-innovation-302374630.html",
+          "confidence": "verified",
+          "captured_at": "2026-08-07"
+        }
+      ]
+    },
+    {
+      "id": "91app",
+      "name": "91APP",
+      "name_zh": "九易宇軒",
+      "ticker": "6741.TWO",
+      "hq": "Taiwan",
+      "founded": 2013,
+      "positioning": "OMO 新零售 SaaS，開店平台起家，向會員經營、零售媒體與 AI Agent 延伸",
+      "record_scope": {
+        "level": "vendor_only",
+        "reason": "← prepare.md MC-001（M1 單廠商做深）與 MC-005（四群未涵蓋零售電商平台側）尚未鬆綁，故只收廠商層",
+        "captured_at": "2026-08-14"
+      },
+      "vision_statement": {
+        "text": null,
+        "source_url": null,
+        "confidence": "none",
+        "captured_at": "2026-08-14"
+      },
+      "product_lines": [
+        {
+          "id": "agent_one",
+          "label": "AgentOne",
+          "label_zh": "企業級 AI Agent 平台",
+          "launched_at": "2026-07-29",
+          "quantified_results_disclosed": false,
+          "note": "官方發表稿未揭露任何量化成效，僅引用 McKinsey 市場數據佐證——與 agents.json 記錄的 Appier 八 Agent 情況相同",
+          "source_url": "https://91app.com/blog/91app-202607-agentone/",
+          "confidence": "claimed",
+          "captured_at": "2026-08-14"
+        },
+        {
+          "id": "commerce_cloud",
+          "label": "Commerce Cloud",
+          "label_zh": "電商／開店平台",
+          "source_url": "https://91app.com/solutions/",
+          "confidence": "claimed",
+          "captured_at": "2026-08-14"
+        },
+        {
+          "id": "marketing_cloud",
+          "label": "Marketing Cloud",
+          "label_zh": "會員 CRM 與行銷自動化",
+          "note": "官網宣稱含 AI 智能分群模型（NAPL／DCIU）與 APP Push／eDM／SMS 溝通渠道",
+          "source_url": "https://marketing.91app.com/",
+          "confidence": "claimed",
+          "captured_at": "2026-08-14"
+        },
+        {
+          "id": "ims",
+          "label": "IMS 多通路管理",
+          "label_zh": "庫存與多通路訂單管理",
+          "source_url": "https://91app.com/solutions/",
+          "confidence": "claimed",
+          "captured_at": "2026-08-14"
+        },
+        {
+          "id": "touch_solution",
+          "label": "91APP Touch Solution",
+          "label_zh": "門市 POS／零售終端",
+          "source_url": "https://91app.com/solutions/",
+          "confidence": "claimed",
+          "captured_at": "2026-08-14"
+        },
+        {
+          "id": "payments",
+          "label": "91APP Payments",
+          "label_zh": "金流",
+          "source_url": "https://91app.com/solutions/",
+          "confidence": "claimed",
+          "captured_at": "2026-08-14"
+        },
+        {
+          "id": "staff_board",
+          "label": "STAFF BOARD",
+          "label_zh": "門市人員管理",
+          "source_url": "https://91app.com/solutions/",
+          "confidence": "claimed",
+          "captured_at": "2026-08-14"
+        }
+      ],
+      "metrics": {
+        "revenue": {
+          "value": 541135000,
+          "currency": "TWD",
+          "period": "FY2026 Q1",
+          "yoy": null,
+          "source_url": "https://statementdog.com/analysis/6741/income-statement",
+          "confidence": "verified",
+          "captured_at": "2026-08-14"
+        },
+        "revenue_fy2025": {
+          "value": 1807000000,
+          "currency": "TWD",
+          "period": "FY2025",
+          "source_url": "https://statementdog.com/analysis/6741/monthly-revenue",
+          "confidence": "verified",
+          "captured_at": "2026-08-14"
+        },
+        "revenue_1h2026": {
+          "value": 1099000000,
+          "currency": "TWD",
+          "period": "2026 H1 累計",
+          "yoy": 0.3173,
+          "source_url": "https://statementdog.com/analysis/6741/monthly-revenue",
+          "confidence": "verified",
+          "captured_at": "2026-08-14"
+        },
+        "net_income": {
+          "value": 133766000,
+          "currency": "TWD",
+          "period": "FY2026 Q1",
+          "eps": 1.15,
+          "source_url": "https://statementdog.com/analysis/6741/income-statement",
+          "confidence": "verified",
+          "captured_at": "2026-08-14"
+        },
+        "gross_margin": {
+          "value": null,
+          "source_url": null,
+          "confidence": "none",
+          "note": "未在已查證來源中取得，不以營收淨利反推",
+          "captured_at": "2026-08-14"
+        },
+        "customers": {
+          "value": 10000,
+          "qualifier": "服務超過一萬家品牌商",
+          "source_url": "https://www.91app.com.hk/about",
+          "confidence": "claimed",
+          "captured_at": "2026-08-14"
+        },
+        "offices": {
+          "value": null,
+          "source_url": null,
+          "confidence": "none",
+          "captured_at": "2026-08-14"
+        },
+        "g2_rating": {
+          "value": null,
+          "reviews_count": null,
+          "source_url": null,
+          "confidence": "none",
+          "note": "台灣本土市場為主，G2／Capterra 無足量評論樣本——G2 Grid 式市場影響力軸在此廠商只能靠財報側支撐",
+          "captured_at": "2026-08-14"
+        },
+        "employees": {
+          "value": null,
+          "source_url": null,
+          "confidence": "none",
+          "note": "公開資料互相衝突（逾 600 人與逾 550 人並存），依資料層硬規則 3 留 null 不取中間值",
+          "captured_at": "2026-08-14"
+        }
+      },
+      "growth_drivers": [
+        {
+          "text": "2026 年 6 月單月營收 2.01 億元，年增 32.45%",
+          "source_url": "https://statementdog.com/analysis/6741/monthly-revenue",
+          "confidence": "verified",
+          "captured_at": "2026-08-14"
+        },
+        {
+          "text": "2026 上半年累計營收年增 31.73%",
+          "source_url": "https://statementdog.com/analysis/6741/monthly-revenue",
+          "confidence": "verified",
+          "captured_at": "2026-08-14"
+        }
+      ],
+      "acquisitions": []
+    }
+  ]
+}
